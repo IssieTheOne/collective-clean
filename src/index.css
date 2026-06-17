@@ -12,19 +12,19 @@
     --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-    --primary: 14 55% 50%;
+    --primary: 334 78% 48%;
     --primary-foreground: 0 0% 100%;
     --secondary: 40 15% 96%;
     --secondary-foreground: 222 47% 11%;
     --muted: 40 10% 95%;
     --muted-foreground: 215 16% 47%;
-    --accent: 14 55% 50%;
+    --accent: 334 78% 48%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 40 10% 88%;
     --input: 40 10% 88%;
-    --ring: 14 55% 50%;
+    --ring: 334 78% 48%;
     --radius: 0.25rem;
   }
 
@@ -45,7 +45,7 @@
   .font-display {
     font-family: 'Playfair Display', serif;
   }
-  
+
   .font-body {
     font-family: 'Inter', sans-serif;
   }
@@ -59,6 +59,6 @@
   }
 
   .editorial-rule-accent {
-    @apply w-16 h-px bg-[#c65d3b];
+    @apply w-16 h-px bg-[#D91A5F];
   }
 }

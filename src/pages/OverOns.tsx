@@ -32,9 +32,9 @@ export default function OverOns() {
       {/* Hero */}
       <section className="bg-[#0f172a] py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-6">Over Ons</p>
+          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Over Ons</p>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#fafaf8] leading-[0.95] max-w-4xl">
-            Wij zijn uw <em className="text-[#c65d3b]">facilitaire</em> partner
+            Wij zijn uw <em className="text-[#D91A5F]">facilitaire</em> partner
           </h1>
           <p className="mt-8 text-[#fafaf8]/50 max-w-2xl leading-relaxed">
             Collective Clean is meer dan een schoonmaakbedrijf. Met jarenlange ervaring 
@@ -55,7 +55,7 @@ export default function OverOns() {
               { num: '98%', label: 'Klanttevredenheid' },
             ].map((s) => (
               <div key={s.label}>
-                <span className="font-display text-3xl sm:text-4xl text-[#c65d3b]">{s.num}</span>
+                <span className="font-display text-3xl sm:text-4xl text-[#D91A5F]">{s.num}</span>
                 <p className="mt-1 text-sm text-[#0f172a]/50">{s.label}</p>
               </div>
             ))}
@@ -68,9 +68,9 @@ export default function OverOns() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
-              <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-4">Missie</p>
+              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Missie</p>
               <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
-                Schoonmaak als <em className="text-[#c65d3b]">beleving</em>
+                Schoonmaak als <em className="text-[#D91A5F]">beleving</em>
               </h2>
               <p className="text-[#0f172a]/60 leading-relaxed mb-6">
                 Wij geloven dat schoonmaak meer is dan het verwijderen van vuil. Het is het creëren 
@@ -94,9 +94,9 @@ export default function OverOns() {
       {/* Values */}
       <section className="py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-4">Kernwaarden</p>
+          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Kernwaarden</p>
           <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-12">
-            Waar wij voor <em className="text-[#c65d3b]">staan</em>
+            Waar wij voor <em className="text-[#D91A5F]">staan</em>
           </h2>
           <div className="grid sm:grid-cols-2 gap-px bg-[#0f172a]/10">
             {values.map((v) => (
@@ -115,7 +115,7 @@ export default function OverOns() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
               <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
-                Wat maakt ons<br /><em className="text-[#c65d3b]">anders</em>?
+                Wat maakt ons<br /><em className="text-[#D91A5F]">anders</em>?
               </h2>
               <div className="editorial-rule-accent mb-6" />
               <p className="text-[#0f172a]/60 leading-relaxed">
@@ -127,7 +127,7 @@ export default function OverOns() {
             <div className="space-y-5">
               {differentiators.map((item) => (
                 <div key={item} className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#c65d3b] mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#D91A5F] mt-2 flex-shrink-0" />
                   <span className="text-[#0f172a]/70">{item}</span>
                 </div>
               ))}
@@ -139,9 +139,9 @@ export default function OverOns() {
       {/* Compliance */}
       <section className="py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-4">Compliance</p>
+          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Compliance</p>
           <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-12">
-            Certificeringen<br />&amp; <em className="text-[#c65d3b]">veiligheid</em>
+            Certificeringen<br />&amp; <em className="text-[#D91A5F]">veiligheid</em>
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#0f172a]/10">
             {compliance.map((c) => (
@@ -165,7 +165,7 @@ export default function OverOns() {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[#c65d3b] text-white text-sm font-body tracking-wide hover:bg-[#b05030] transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 bg-[#D91A5F] text-white text-sm font-body tracking-wide hover:bg-[#b0154a] transition-colors"
           >
             Plan een kennismaking
             <ArrowRight size={16} className="ml-2" />

@@ -33,9 +33,9 @@ export default function Diensten() {
       {/* Hero */}
       <section className="bg-[#0f172a] py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-6">Diensten</p>
+          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Diensten</p>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#fafaf8] leading-[0.95] max-w-4xl">
-            Wat wij <em className="text-[#c65d3b]">doen</em>, doen wij goed
+            Wat wij <em className="text-[#D91A5F]">doen</em>, doen wij goed
           </h1>
           <p className="mt-8 text-[#fafaf8]/50 max-w-2xl leading-relaxed">
             Twee specialistische pijlers: hospitality cleaning voor de hotelbranche, 
@@ -50,9 +50,9 @@ export default function Diensten() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-4">Pijler 01</p>
+              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 01</p>
               <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
-                Hospitality<br /><em className="text-[#c65d3b]">Cleaning</em>
+                Hospitality<br /><em className="text-[#D91A5F]">Cleaning</em>
               </h2>
               <div className="editorial-rule-accent mb-6" />
               <p className="text-[#0f172a]/60 leading-relaxed mb-8">
@@ -72,11 +72,11 @@ export default function Diensten() {
                   {i > 0 && <div className="editorial-rule" />}
                   <div className="py-6">
                     <div className="flex items-baseline gap-4">
-                      <span className="font-display text-3xl text-[#0f172a]/10 group-hover:text-[#c65d3b]/20 transition-colors">
+                      <span className="font-display text-3xl text-[#0f172a]/10 group-hover:text-[#D91A5F]/20 transition-colors">
                         0{i + 1}
                       </span>
                       <div>
-                        <h3 className="font-display text-xl text-[#0f172a] group-hover:text-[#c65d3b] transition-colors">
+                        <h3 className="font-display text-xl text-[#0f172a] group-hover:text-[#D91A5F] transition-colors">
                           {s.title}
                         </h3>
                         <p className="mt-1 text-sm text-[#0f172a]/50 leading-relaxed max-w-md">
@@ -103,11 +103,11 @@ export default function Diensten() {
                   {i > 0 && <div className="editorial-rule" />}
                   <div className="py-6">
                     <div className="flex items-baseline gap-4">
-                      <span className="font-display text-3xl text-[#0f172a]/10 group-hover:text-[#c65d3b]/20 transition-colors">
+                      <span className="font-display text-3xl text-[#0f172a]/10 group-hover:text-[#D91A5F]/20 transition-colors">
                         0{i + 1}
                       </span>
                       <div>
-                        <h3 className="font-display text-xl text-[#0f172a] group-hover:text-[#c65d3b] transition-colors">
+                        <h3 className="font-display text-xl text-[#0f172a] group-hover:text-[#D91A5F] transition-colors">
                           {s.title}
                         </h3>
                         <p className="mt-1 text-sm text-[#0f172a]/50 leading-relaxed max-w-md">
@@ -121,9 +121,9 @@ export default function Diensten() {
               <div className="editorial-rule" />
             </div>
             <div className="order-1 lg:order-2">
-              <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-4">Pijler 02</p>
+              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 02</p>
               <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
-                Zakelijke<br /><em className="text-[#c65d3b]">Schoonmaak</em>
+                Zakelijke<br /><em className="text-[#D91A5F]">Schoonmaak</em>
               </h2>
               <div className="editorial-rule-accent mb-6" />
               <p className="text-[#0f172a]/60 leading-relaxed mb-8">
@@ -147,14 +147,14 @@ export default function Diensten() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div>
               <h2 className="font-display text-3xl sm:text-4xl text-[#0f172a] leading-tight mb-4">
-                In elke dienst,<br /><em className="text-[#c65d3b]">hetzelfde</em> commitment
+                In elke dienst,<br /><em className="text-[#D91A5F]">hetzelfde</em> commitment
               </h2>
               <div className="editorial-rule-accent" />
             </div>
             <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
               {features.map((f) => (
                 <div key={f} className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#c65d3b] mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#D91A5F] mt-2 flex-shrink-0" />
                   <span className="text-[#0f172a]/70 text-sm">{f}</span>
                 </div>
               ))}
@@ -167,14 +167,14 @@ export default function Diensten() {
       <section className="py-20 sm:py-28 bg-[#0f172a]">
         <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
           <h2 className="font-display text-4xl sm:text-5xl text-[#fafaf8] leading-tight mb-6">
-            Benieuwd naar de <em className="text-[#c65d3b]">mogelijkheden</em>?
+            Benieuwd naar de <em className="text-[#D91A5F]">mogelijkheden</em>?
           </h2>
           <p className="text-[#fafaf8]/50 max-w-xl mx-auto mb-8">
             Neem contact op voor een vrijblijvende offerte of plan een kennismaking.
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[#c65d3b] text-white text-sm font-body tracking-wide hover:bg-[#b05030] transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 bg-[#D91A5F] text-white text-sm font-body tracking-wide hover:bg-[#b0154a] transition-colors"
           >
             Offerte aanvragen
             <ArrowRight size={16} className="ml-2" />

@@ -16,25 +16,25 @@ export default function Home() {
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pb-16 sm:pb-24 pt-32 w-full">
           <div className="max-w-4xl">
-            <p className="text-sm font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-6">
+            <p className="text-sm font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">
               Schoonmaak &middot; Hospitality &middot; Facility
             </p>
             <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-[#fafaf8] leading-[0.95] tracking-tight">
               Schoonmaak<br />
-              <em className="text-[#c65d3b]">excellence</em><br />
+              <em className="text-[#D91A5F]">excellence</em><br />
               <span className="text-4xl sm:text-5xl lg:text-6xl text-[#fafaf8]/60">voor elke ruimte</span>
             </h1>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#c65d3b] text-white text-sm font-body tracking-wide hover:bg-[#b05030] transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 bg-[#D91A5F] text-white text-sm font-body tracking-wide hover:bg-[#b0154a] transition-colors"
               >
                 Offerte aanvragen
                 <ArrowRight size={16} className="ml-2" />
               </Link>
               <Link
                 to="/diensten"
-                className="inline-flex items-center justify-center px-8 py-4 border border-[#fafaf8]/20 text-[#fafaf8] text-sm font-body tracking-wide hover:border-[#c65d3b] hover:text-[#c65d3b] transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 border border-[#fafaf8]/20 text-[#fafaf8] text-sm font-body tracking-wide hover:border-[#D91A5F] hover:text-[#D91A5F] transition-colors"
               >
                 Bekijk diensten
               </Link>
@@ -48,7 +48,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <div className="editorial-rule-accent mb-10" />
           <p className="font-display text-2xl sm:text-3xl lg:text-4xl text-[#0f172a] leading-snug max-w-4xl">
-            Wij zijn niet zomaar een schoonmaakbedrijf. Wij zijn uw <em className="text-[#c65d3b]">facilitaire partner</em> — 
+            Wij zijn niet zomaar een schoonmaakbedrijf. Wij zijn uw <em className="text-[#D91A5F]">facilitaire partner</em> — 
             met de precisie van een hotelier en de betrouwbaarheid van een familiebedrijf.
           </p>
           <p className="mt-6 text-[#0f172a]/50 text-sm max-w-2xl leading-relaxed">
@@ -85,7 +85,7 @@ export default function Home() {
                 </p>
                 <Link
                   to="/diensten#hospitality"
-                  className="inline-flex items-center mt-6 text-sm font-body text-[#c65d3b] hover:underline"
+                  className="inline-flex items-center mt-6 text-sm font-body text-[#D91A5F] hover:underline"
                 >
                   Meer over hospitality →
                 </Link>
@@ -114,7 +114,7 @@ export default function Home() {
                 </p>
                 <Link
                   to="/diensten#zakelijk"
-                  className="inline-flex items-center mt-6 text-sm font-body text-[#c65d3b] hover:underline"
+                  className="inline-flex items-center mt-6 text-sm font-body text-[#D91A5F] hover:underline"
                 >
                   Meer over zakelijke schoonmaak →
                 </Link>
@@ -129,7 +129,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-12 mb-16">
             <div className="lg:col-span-2">
-              <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-4">Branches</p>
+              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Branches</p>
               <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight">
                 Vakwerk voor <em>elke</em> sector
               </h2>
@@ -154,10 +154,10 @@ export default function Home() {
             <div key={s.num} className="group">
               <div className="editorial-rule mb-0" />
               <div className="py-6 grid sm:grid-cols-12 gap-4 items-center cursor-default">
-                <span className="sm:col-span-1 font-display text-2xl text-[#0f172a]/15 group-hover:text-[#c65d3b]/30 transition-colors">
+                <span className="sm:col-span-1 font-display text-2xl text-[#0f172a]/15 group-hover:text-[#D91A5F]/30 transition-colors">
                   {s.num}
                 </span>
-                <h3 className="sm:col-span-4 font-display text-xl sm:text-2xl text-[#0f172a] group-hover:text-[#c65d3b] transition-colors">
+                <h3 className="sm:col-span-4 font-display text-xl sm:text-2xl text-[#0f172a] group-hover:text-[#D91A5F] transition-colors">
                   {s.name}
                 </h3>
                 <p className="sm:col-span-7 text-sm text-[#0f172a]/50 leading-relaxed">
@@ -174,7 +174,7 @@ export default function Home() {
       <section className="py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-4">Werkwijze</p>
+            <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Werkwijze</p>
             <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight">
               Van kennismaking tot kwaliteitsgarantie
             </h2>
@@ -213,9 +213,9 @@ export default function Home() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-4">Waarom wij</p>
+              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Waarom wij</p>
               <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-8">
-                Meer dan<br /><em className="text-[#c65d3b]">schoonmaken</em>
+                Meer dan<br /><em className="text-[#D91A5F]">schoonmaken</em>
               </h2>
               <div className="space-y-5">
                 {[
@@ -226,7 +226,7 @@ export default function Home() {
                   'Snelle opstart — binnen 2 weken operationeel',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#c65d3b] mt-2 flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#D91A5F] mt-2 flex-shrink-0" />
                     <span className="text-[#0f172a]/70 text-sm">{item}</span>
                   </div>
                 ))}
@@ -246,7 +246,7 @@ export default function Home() {
       <section className="py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-14">
-            <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-4">Compliance</p>
+            <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Compliance</p>
             <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a]">Gecertificeerd &amp; gegarandeerd</h2>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-[#0f172a]/10">

@@ -21,9 +21,9 @@ export default function Contact() {
       {/* Hero */}
       <section className="bg-[#0f172a] py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-body text-[#c65d3b] tracking-[0.2em] uppercase mb-6">Contact</p>
+          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Contact</p>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#fafaf8] leading-[0.95] max-w-4xl">
-            Laten we <em className="text-[#c65d3b]">kennismaken</em>
+            Laten we <em className="text-[#D91A5F]">kennismaken</em>
           </h1>
           <p className="mt-8 text-[#fafaf8]/50 max-w-2xl leading-relaxed">
             Heeft u vragen of wilt u een vrijblijvende offerte aanvragen? 
@@ -49,13 +49,13 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-1">E-mail</p>
-                    <a href="mailto:info@collectiveclean.nl" className="text-[#c65d3b] hover:underline">
+                    <a href="mailto:info@collectiveclean.nl" className="text-[#D91A5F] hover:underline">
                       info@collectiveclean.nl
                     </a>
                   </div>
                   <div>
                     <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-1">Telefoon</p>
-                    <a href="tel:+31201234567" className="text-[#c65d3b] hover:underline">
+                    <a href="tel:+31201234567" className="text-[#D91A5F] hover:underline">
                       +31 20 123 4567
                     </a>
                   </div>
@@ -83,8 +83,8 @@ export default function Contact() {
             <div className="lg:col-span-2">
               {submitted ? (
                 <div className="bg-white border border-[#0f172a]/8 p-12 text-center">
-                  <div className="w-12 h-12 rounded-full bg-[#c65d3b]/10 flex items-center justify-center mx-auto mb-4">
-                    <CheckCircle size={24} className="text-[#c65d3b]" />
+                  <div className="w-12 h-12 rounded-full bg-[#D91A5F]/10 flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle size={24} className="text-[#D91A5F]" />
                   </div>
                   <h3 className="font-display text-2xl text-[#0f172a] mb-2">Bedankt voor uw aanvraag!</h3>
                   <p className="text-[#0f172a]/50">
@@ -104,7 +104,7 @@ export default function Contact() {
                       <input
                         type="text" id="naam" name="naam" required
                         value={form.naam} onChange={handleChange}
-                        className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#c65d3b] transition-colors"
+                        className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#D91A5F] transition-colors"
                         placeholder="Uw naam"
                       />
                     </div>
@@ -115,7 +115,7 @@ export default function Contact() {
                       <input
                         type="text" id="bedrijf" name="bedrijf"
                         value={form.bedrijf} onChange={handleChange}
-                        className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#c65d3b] transition-colors"
+                        className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#D91A5F] transition-colors"
                         placeholder="Bedrijfsnaam"
                       />
                     </div>
@@ -129,7 +129,7 @@ export default function Contact() {
                       <input
                         type="email" id="email" name="email" required
                         value={form.email} onChange={handleChange}
-                        className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#c65d3b] transition-colors"
+                        className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#D91A5F] transition-colors"
                         placeholder="uw@email.nl"
                       />
                     </div>
@@ -140,7 +140,7 @@ export default function Contact() {
                       <input
                         type="tel" id="telefoon" name="telefoon"
                         value={form.telefoon} onChange={handleChange}
-                        className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#c65d3b] transition-colors"
+                        className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#D91A5F] transition-colors"
                         placeholder="+31 6 12345678"
                       />
                     </div>
@@ -153,7 +153,7 @@ export default function Contact() {
                     <select
                       id="dienst" name="dienst"
                       value={form.dienst} onChange={handleChange}
-                      className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#c65d3b] transition-colors"
+                      className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#D91A5F] transition-colors"
                     >
                       <option value="">Selecteer een dienst</option>
                       <option value="hospitality">Hospitality Cleaning</option>
@@ -175,14 +175,14 @@ export default function Contact() {
                     <textarea
                       id="bericht" name="bericht" rows={4}
                       value={form.bericht} onChange={handleChange}
-                      className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#c65d3b] transition-colors resize-none"
+                      className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#D91A5F] transition-colors resize-none"
                       placeholder="Vertel ons meer over uw wensen..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center px-8 py-4 bg-[#c65d3b] text-white text-sm font-body tracking-wide hover:bg-[#b05030] transition-colors"
+                    className="inline-flex items-center justify-center px-8 py-4 bg-[#D91A5F] text-white text-sm font-body tracking-wide hover:bg-[#b0154a] transition-colors"
                   >
                     <Send size={16} className="mr-2" />
                     Verstuur aanvraag

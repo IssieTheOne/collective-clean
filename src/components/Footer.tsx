@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 sm:py-20">
           <div className="grid lg:grid-cols-2 gap-10 items-end">
             <div>
-              <p className="text-sm font-body text-[#c65d3b] tracking-widest uppercase mb-4">Start de samenwerking</p>
+              <p className="text-sm font-body text-[#D91A5F] tracking-widest uppercase mb-4">Start de samenwerking</p>
               <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#fafaf8] leading-[1.1]">
                 Klaar voor een<br />
-                <em className="text-[#c65d3b]">schone</em> start?
+                <em className="text-[#D91A5F]">schone</em> start?
               </h2>
             </div>
             <div className="lg:text-right">
@@ -21,13 +21,13 @@ export default function Footer() {
               <div className="flex flex-col sm:flex-row gap-3 lg:justify-end">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-3.5 bg-[#c65d3b] text-white text-sm font-body tracking-wide hover:bg-[#b05030] transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-3.5 bg-[#D91A5F] text-white text-sm font-body tracking-wide hover:bg-[#b0154a] transition-colors"
                 >
                   Offerte aanvragen
                 </Link>
                 <a
                   href="tel:+31201234567"
-                  className="inline-flex items-center justify-center px-8 py-3.5 border border-white/20 text-[#fafaf8] text-sm font-body tracking-wide hover:border-[#c65d3b] hover:text-[#c65d3b] transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-3.5 border border-white/20 text-[#fafaf8] text-sm font-body tracking-wide hover:border-[#D91A5F] hover:text-[#D91A5F] transition-colors"
                 >
                   +31 20 123 4567
                 </a>
@@ -42,8 +42,12 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <span className="font-display text-xl text-[#fafaf8]">Collective Clean</span>
-            <p className="mt-4 text-sm leading-relaxed">
+            <img
+              src="/images/logo.jpg"
+              alt="Collective Clean"
+              className="h-12 w-auto rounded-sm mb-4"
+            />
+            <p className="text-sm leading-relaxed">
               Professionele schoonmaak en hospitality services. Amsterdam, Almere en landelijk.
             </p>
           </div>
@@ -52,10 +56,10 @@ export default function Footer() {
           <div>
             <h3 className="text-xs font-body text-[#fafaf8]/40 tracking-widest uppercase mb-5">Diensten</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/diensten#hospitality" className="hover:text-[#c65d3b] transition-colors">Hotel Housekeeping</Link></li>
-              <li><Link to="/diensten#zakelijk" className="hover:text-[#c65d3b] transition-colors">Kantoor Schoonmaak</Link></li>
-              <li><Link to="/diensten#zakelijk" className="hover:text-[#c65d3b] transition-colors">VvE Onderhoud</Link></li>
-              <li><Link to="/diensten#zakelijk" className="hover:text-[#c65d3b] transition-colors">Zorgschoonmaak</Link></li>
+              <li><Link to="/diensten#hospitality" className="hover:text-[#D91A5F] transition-colors">Hotel Housekeeping</Link></li>
+              <li><Link to="/diensten#zakelijk" className="hover:text-[#D91A5F] transition-colors">Kantoor Schoonmaak</Link></li>
+              <li><Link to="/diensten#zakelijk" className="hover:text-[#D91A5F] transition-colors">VvE Onderhoud</Link></li>
+              <li><Link to="/diensten#zakelijk" className="hover:text-[#D91A5F] transition-colors">Zorgschoonmaak</Link></li>
             </ul>
           </div>
 
@@ -76,12 +80,12 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li>Amsterdam & Almere</li>
               <li>
-                <a href="mailto:info@collectiveclean.nl" className="hover:text-[#c65d3b] transition-colors">
+                <a href="mailto:info@collectiveclean.nl" className="hover:text-[#D91A5F] transition-colors">
                   info@collectiveclean.nl
                 </a>
               </li>
               <li>
-                <a href="tel:+31201234567" className="hover:text-[#c65d3b] transition-colors">
+                <a href="tel:+31201234567" className="hover:text-[#D91A5F] transition-colors">
                   +31 20 123 4567
                 </a>
               </li>

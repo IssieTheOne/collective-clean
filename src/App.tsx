@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Diensten from './pages/Diensten'
 import OverOns from './pages/OverOns'
 import Contact from './pages/Contact'
+import Vacatures from './pages/Vacatures'
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/diensten" element={<Diensten />} />
         <Route path="/over-ons" element={<OverOns />} />
+        <Route path="/vacatures" element={<Vacatures />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
