@@ -83,10 +83,13 @@ function SollicitatieForm({ vacancyTitle }: { vacancyTitle: string }) {
     return (
       <button
         onClick={() => setShowForm(true)}
-        className="inline-flex items-center px-6 py-3 bg-[#D91A5F] text-white text-sm font-body tracking-wide hover:bg-[#b0154a] transition-colors"
+        className="group w-full sm:w-auto min-w-[320px] bg-[#0f172a] px-12 py-5 text-white transition-all duration-300 hover:bg-[#D91A5F] hover:shadow-[0_8px_30px_rgba(217,26,95,0.3)]"
       >
-        Solliciteer op deze functie
-        <ArrowRight size={16} className="ml-2" />
+        <span className="flex items-center justify-center gap-4 text-base font-semibold tracking-wide">
+          <Briefcase size={22} strokeWidth={2} className="text-[#D91A5F] group-hover:text-white transition-colors" />
+          Solliciteer op deze functie
+          <ArrowRight size={22} strokeWidth={2} className="transition-transform duration-300 group-hover:translate-x-1.5" />
+        </span>
       </button>
     )
   }
@@ -168,7 +171,7 @@ export default function Vacatures() {
               {[
                 { title: 'Groei mee', desc: 'Wij investeren in jouw ontwikkeling met trainingen en doorgroeimogelijkheden.' },
                 { title: 'Flexibel', desc: 'Fulltime, parttime of oproepbasis — wij zoeken samen naar de beste invulling.' },
-                { title: 'Gecertificeerd', desc: 'Werkgever met SNA, VCU en NBBU certificering. Goede arbeidsvoorwaarden.' },
+                { title: 'Gecertificeerd', desc: 'Werkgever met SNA, VCU en PayOK certificering. Goede arbeidsvoorwaarden.' },
                 { title: 'Teamspirit', desc: 'Werken in een hecht team met collega\'s die elkaar helpen en inspireren.' },
               ].map((item) => (
                 <div key={item.title}>
@@ -260,8 +263,10 @@ export default function Vacatures() {
                   </div>
                 </div>
 
-                {/* Inline Formspree Form */}
-                <SollicitatieForm vacancyTitle={v.title} />
+                {/* CTA Section */}
+                <div className="bg-[#fafaf8] border-t border-[#0f172a]/8 px-8 py-8 sm:px-10 sm:py-10">
+                  <SollicitatieForm vacancyTitle={v.title} />
+                </div>
               </div>
             ))}
           </div>

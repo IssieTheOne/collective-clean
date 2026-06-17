@@ -1,5 +1,5 @@
 import { useForm, ValidationError } from '@formspree/react'
-import { Send, CheckCircle } from 'lucide-react'
+import { Send, CheckCircle, Phone } from 'lucide-react'
 
 export default function Contact() {
   const [state, handleSubmit] = useForm('xwvjjejk')
@@ -84,13 +84,30 @@ export default function Contact() {
               </div>
 
               <div className="pt-8 border-t border-[#0f172a]/8">
-                <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-4">Gecertificeerd</p>
-                <div className="grid grid-cols-2 gap-3 text-sm">
-                  <span className="text-[#0f172a]/60">SNA NEN 4400-1</span>
-                  <span className="text-[#0f172a]/60">VCU</span>
-                  <span className="text-[#0f172a]/60">PayOK</span>
-                  <span className="text-[#0f172a]/60">NBBU</span>
-                </div>
+                <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-4">Adres</p>
+                <p className="text-sm text-[#0f172a]/60">
+                  Weesperstraat 100F<br />
+                  1112 AP Diemen
+                </p>
+                <a
+                  href="https://www.google.com/maps/search/Weesperstraat+100F+Diemen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 mt-2 text-sm text-[#D91A5F] hover:underline"
+                >
+                  Bekijk op Google Maps →
+                </a>
+              </div>
+
+              <div className="pt-8 border-t border-[#0f172a]/8">
+                <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-4">Bel direct</p>
+                <a
+                  href="tel:+31201234567"
+                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#D91A5F] text-white text-sm font-body tracking-wide hover:bg-[#b0154a] transition-colors"
+                >
+                  <Phone size={16} />
+                  +31 20 123 4567
+                </a>
               </div>
             </div>
 

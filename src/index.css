@@ -39,6 +39,10 @@
     font-family: 'Playfair Display', serif;
     @apply font-semibold tracking-tight;
   }
+
+  h1 em, h2 em, h3 em {
+    font-weight: 700;
+  }
 }
 
 @layer components {

@@ -1,4 +1,5 @@
 import { Link } from 'react-router'
+import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -29,6 +30,7 @@ export default function Footer() {
                   href="tel:+31201234567"
                   className="inline-flex items-center justify-center px-8 py-3.5 border border-white/20 text-[#fafaf8] text-sm font-body tracking-wide hover:border-[#D91A5F] hover:text-[#D91A5F] transition-colors"
                 >
+                  <Phone size={16} className="mr-2" />
                   +31 20 123 4567
                 </a>
               </div>
@@ -45,10 +47,10 @@ export default function Footer() {
             <img
               src="/images/logo.png"
               alt="Collective Clean"
-              className="h-12 w-auto rounded-sm mb-4"
+              className="h-20 w-auto mb-6"
             />
-            <p className="text-sm leading-relaxed">
-              Professionele schoonmaak en hospitality services. Amsterdam, Almere en landelijk.
+            <p className="text-sm text-[#fafaf8]/60 leading-relaxed">
+              Uw landelijke partner in professionele schoonmaak en hospitality services.
             </p>
           </div>
 
@@ -70,7 +72,6 @@ export default function Footer() {
               <li>SNA NEN 4400-1</li>
               <li>VCU gecertificeerd</li>
               <li>PayOK</li>
-              <li>NBBU lid</li>
             </ul>
           </div>
 
@@ -78,15 +79,31 @@ export default function Footer() {
           <div>
             <h3 className="text-xs font-body text-[#fafaf8]/40 tracking-widest uppercase mb-5">Contact</h3>
             <ul className="space-y-3 text-sm">
-              <li>Amsterdam & Almere</li>
+              <li className="flex items-start gap-2">
+                <MapPin size={14} className="mt-0.5 flex-shrink-0 text-[#D91A5F]" />
+                <span>Weesperstraat 100F<br />1112 AP Diemen</span>
+              </li>
               <li>
-                <a href="mailto:info@collectiveclean.nl" className="hover:text-[#D91A5F] transition-colors">
+                <a href="mailto:info@collectiveclean.nl" className="hover:text-[#D91A5F] transition-colors flex items-center gap-2">
+                  <Mail size={14} className="flex-shrink-0 text-[#D91A5F]" />
                   info@collectiveclean.nl
                 </a>
               </li>
               <li>
-                <a href="tel:+31201234567" className="hover:text-[#D91A5F] transition-colors">
+                <a href="tel:+31201234567" className="hover:text-[#D91A5F] transition-colors flex items-center gap-2">
+                  <Phone size={14} className="flex-shrink-0 text-[#D91A5F]" />
                   +31 20 123 4567
+                </a>
+              </li>
+              <li className="pt-2">
+                <a
+                  href="https://www.google.com/maps/search/Weesperstraat+100F+Diemen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-[#D91A5F] hover:underline"
+                >
+                  <ExternalLink size={12} />
+                  Bekijk op Google Maps
                 </a>
               </li>
             </ul>

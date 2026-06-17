@@ -35,7 +35,7 @@ export default function Diensten() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Diensten</p>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#fafaf8] leading-[0.95] max-w-4xl">
-            Wat wij <em className="text-[#D91A5F]">doen</em>, doen wij goed
+            Uw partner in <em className="text-[#D91A5F]">schoonmaak</em> en hospitality
           </h1>
           <p className="mt-8 text-[#fafaf8]/50 max-w-2xl leading-relaxed">
             Twee specialistische pijlers: hospitality cleaning voor de hotelbranche, 

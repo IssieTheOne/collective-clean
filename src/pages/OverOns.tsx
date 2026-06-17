@@ -12,8 +12,7 @@ const compliance = [
   { title: 'SNA NEN 4400-1', desc: 'Als SNA-gecertificeerd bedrijf voldoen wij aan de strengste eisen op het gebied van beloning, belasting en premies.' },
   { title: 'VCU', desc: 'Veiligheid, gezondheid en milieu staan centraal. Onze medewerkers werken volgens VCU-veiligheidsprotocollen.' },
   { title: 'PayOK', desc: 'Betalingsgarantie via PayOK zorgt voor financiële zekerheid en transparantie.' },
-  { title: 'NBBU', desc: 'Lid van de Nederlandse Bond van Bemiddelings- en Uitzendondernemingen. Wij werken volgens de NBBU-cao.' },
-  { title: 'VOG', desc: 'Alle medewerkers beschikken over een Verklaring Omtrent het Gedrag voor extra zekerheid.' },
+  { title: 'PayOK', desc: 'Betalingsgarantie via PayOK zorgt voor financiele zekerheid en transparantie.' },
   { title: 'Training', desc: 'Iedere medewerker doorloopt een uitgebreid onboardingtraject met vaktrainingen en hospitality-coaching.' },
 ]
 

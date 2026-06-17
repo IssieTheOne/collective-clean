@@ -47,21 +47,13 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* CTA + Mobile toggle */}
-          <div className="flex items-center gap-4">
-            <Link
-              to="/contact"
-              className="hidden sm:inline-flex items-center text-sm font-body text-white/90 border-b border-[#D91A5F] pb-0.5 hover:text-[#D91A5F] transition-colors"
-            >
-              Offerte aanvragen
-            </Link>
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 text-white/80 hover:text-white"
-            >
-              {mobileOpen ? <X size={20} strokeWidth={1.5} /> : <Menu size={20} strokeWidth={1.5} />}
-            </button>
-          </div>
+          {/* Mobile toggle only */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="lg:hidden p-2 text-white/80 hover:text-white"
+          >
+            {mobileOpen ? <X size={20} strokeWidth={1.5} /> : <Menu size={20} strokeWidth={1.5} />}
+          </button>
         </div>
       </div>
 
@@ -83,15 +75,6 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-4 border-t border-white/10">
-              <Link
-                to="/contact"
-                onClick={() => setMobileOpen(false)}
-                className="text-sm font-body text-[#D91A5F]"
-              >
-                Offerte aanvragen →
-              </Link>
-            </div>
           </div>
         </div>
       )}

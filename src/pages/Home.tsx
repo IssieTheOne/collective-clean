@@ -1,5 +1,7 @@
 import { Link } from 'react-router'
 import { ArrowRight } from 'lucide-react'
+import Testimonials from '../components/Testimonials'
+import MVO from '../components/MVO'
 
 export default function Home() {
   return (
@@ -219,7 +221,7 @@ export default function Home() {
               </h2>
               <div className="space-y-5">
                 {[
-                  'Gecertificeerde medewerkers (VCU, VOG, SNA)',
+                  'Gecertificeerde medewerkers (VCU, SNA)',
                   'Digitale kwaliteitsrapportages in real-time',
                   'Flexibele opschaling bij piekmomenten',
                   'Vast aanspreekpunt voor persoonlijke service',
@@ -242,6 +244,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== MVO ===== */}
+      <MVO />
+
+      {/* ===== TESTIMONIALS ===== */}
+      <Testimonials />
+
       {/* ===== CERTS ===== */}
       <section className="py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -249,18 +257,10 @@ export default function Home() {
             <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Compliance</p>
             <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a]">Gecertificeerd &amp; gegarandeerd</h2>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-[#0f172a]/10">
-            {[
-              { name: 'SNA NEN 4400-1', desc: 'Gecertificeerd schoonmaakbedrijf volgens de strengste norm' },
-              { name: 'VCU', desc: 'Veiligheid, gezondheid en milieu gecertificeerd' },
-              { name: 'PayOK', desc: 'Betalingsgarantie voor financiële zekerheid' },
-              { name: 'NBBU', desc: 'Lid van de brancheorganisatie uitzendbureaus' },
-            ].map((cert) => (
-              <div key={cert.name} className="bg-white p-8 sm:p-10">
-                <h3 className="font-display text-xl text-[#0f172a] mb-2">{cert.name}</h3>
-                <p className="text-sm text-[#0f172a]/50 leading-relaxed">{cert.desc}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto items-center justify-items-center">
+            <img src="/images/cert-sna.png" alt="SNA NEN 4400-1 gecertificeerd" className="w-28 h-28 object-contain" />
+            <img src="/images/cert-vcu.png" alt="VCU gecertificeerd" className="w-28 h-28 object-contain" />
+            <img src="/images/cert-payok.png" alt="PayOK" className="w-28 h-28 object-contain" />
           </div>
         </div>
       </section>
