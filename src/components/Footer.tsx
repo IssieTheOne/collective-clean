@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Collective Clean"
               className="h-12 w-auto rounded-sm mb-4"
             />

@@ -15,15 +15,15 @@ export default function Navigation() {
   const location = useLocation()
 
   return (
-    <nav className="border-b border-[#0f172a]/8 bg-[#fafaf8]/95 backdrop-blur-sm">
+    <nav className="bg-[#0f172a] border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Collective Clean"
-              className="h-10 w-auto rounded-sm"
+              className="h-14 w-auto"
             />
           </Link>
 
@@ -36,7 +36,7 @@ export default function Navigation() {
                 className={`relative text-sm font-body tracking-wide transition-colors ${
                   location.pathname === link.path
                     ? 'text-[#D91A5F]'
-                    : 'text-[#0f172a]/60 hover:text-[#0f172a]'
+                    : 'text-white/60 hover:text-white'
                 }`}
               >
                 {link.label}
@@ -51,13 +51,13 @@ export default function Navigation() {
           <div className="flex items-center gap-4">
             <Link
               to="/contact"
-              className="hidden sm:inline-flex items-center text-sm font-body text-[#0f172a] border-b border-[#D91A5F] pb-0.5 hover:text-[#D91A5F] transition-colors"
+              className="hidden sm:inline-flex items-center text-sm font-body text-white/90 border-b border-[#D91A5F] pb-0.5 hover:text-[#D91A5F] transition-colors"
             >
               Offerte aanvragen
             </Link>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 text-[#0f172a]"
+              className="lg:hidden p-2 text-white/80 hover:text-white"
             >
               {mobileOpen ? <X size={20} strokeWidth={1.5} /> : <Menu size={20} strokeWidth={1.5} />}
             </button>
@@ -67,7 +67,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-[#0f172a]/8 bg-[#fafaf8]">
+        <div className="lg:hidden border-t border-white/10 bg-[#0f172a]">
           <div className="px-6 py-6 space-y-4">
             {navLinks.map((link) => (
               <Link
@@ -77,13 +77,13 @@ export default function Navigation() {
                 className={`block font-display text-2xl ${
                   location.pathname === link.path
                     ? 'text-[#D91A5F]'
-                    : 'text-[#0f172a]'
+                    : 'text-white'
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-            <div className="pt-4 border-t border-[#0f172a]/8">
+            <div className="pt-4 border-t border-white/10">
               <Link
                 to="/contact"
                 onClick={() => setMobileOpen(false)}
