@@ -59,20 +59,28 @@ export default function Contact() {
                 <div className="editorial-rule-accent mb-6" />
                 <div className="space-y-4 text-sm">
                   <div>
-                    <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-1">Locatie</p>
-                    <p className="text-[#0f172a]/70">Amsterdam & Almere</p>
-                    <p className="text-[#0f172a]/70">Landelijk inzetbaar</p>
+                    <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-1">Adres</p>
+                    <p className="text-[#0f172a]/70">Weesperstraat 100F</p>
+                    <p className="text-[#0f172a]/70">1112 AP Diemen</p>
+                    <a
+                      href="https://www.google.com/maps/search/Weesperstraat+100F+Diemen"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 mt-1 text-xs text-[#D91A5F] hover:underline"
+                    >
+                      Bekijk op Google Maps →
+                    </a>
                   </div>
                   <div>
                     <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-1">E-mail</p>
-                    <a href="mailto:info@collectiveclean.nl" className="text-[#D91A5F] hover:underline">
-                      info@collectiveclean.nl
+                    <a href="mailto:info@collectivefacilityservices.nl" className="text-[#D91A5F] hover:underline">
+                      info@collectivefacilityservices.nl
                     </a>
                   </div>
                   <div>
                     <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-1">Telefoon</p>
-                    <a href="tel:+31201234567" className="text-[#D91A5F] hover:underline">
-                      +31 20 123 4567
+                    <a href="tel:+31208965142" className="text-[#D91A5F] hover:underline">
+                      +31 20 896 51 42
                     </a>
                   </div>
                   <div>
@@ -102,11 +110,11 @@ export default function Contact() {
               <div className="pt-8 border-t border-[#0f172a]/8">
                 <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-4">Bel direct</p>
                 <a
-                  href="tel:+31201234567"
+                  href="tel:+31208965142"
                   className="inline-flex items-center gap-2 px-5 py-3 bg-[#D91A5F] text-white text-sm font-body tracking-wide hover:bg-[#b0154a] transition-colors"
                 >
                   <Phone size={16} />
-                  +31 20 123 4567
+                  +31 20 896 51 42
                 </a>
               </div>
             </div>
@@ -174,15 +182,15 @@ export default function Contact() {
                     className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#D91A5F] transition-colors"
                   >
                     <option value="">Selecteer een dienst</option>
-                    <option value="hospitality">Hospitality Cleaning</option>
-                    <option value="kantoor">Kantoor Schoonmaak</option>
+                    <option value="beveiliging">Beveiliging</option>
+                    <option value="receptie">Receptie</option>
+                    <option value="schoonmaak-kantoor">Schoonmaak Kantoor</option>
+                    <option value="schoonmaak-hotel">Schoonmaak Hotel</option>
                     <option value="vve">VvE Onderhoud</option>
                     <option value="zorg">Zorgschoonmaak</option>
                     <option value="retail">Retail Cleaning</option>
-                    <option value="onderwijs">Onderwijs</option>
-                    <option value="glazenwassen">Glasbewassing</option>
-                    <option value="vloer">Vloeronderhoud</option>
-                    <option value="anders">Anders / Maatwerk</option>
+                    <option value="evenementen">Evenementen</option>
+                    <option value="anders">Combinatie / Maatwerk</option>
                   </select>
                 </div>
 

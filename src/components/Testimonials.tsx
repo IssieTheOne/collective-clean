@@ -11,35 +11,35 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    text: "Collective Clean is al jaren onze dienstverlener naar grote tevredenheid. Ze denken in oplossingen, zijn goed bereikbaar en hebben fijne, positieve medewerkers. De samenwerking is uitstekend.",
+    text: "Collective Facility Services is al jaren onze dienstverlener naar grote tevredenheid. Ze denken in oplossingen, zijn goed bereikbaar en hebben fijne, positieve medewerkers. De samenwerking is uitstekend.",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     name: "Margreet van Dijk",
     role: "Facility Manager",
     company: "Boutique Hotel Amsterdam",
   },
   {
-    text: "Dankzij Collective Clean ziet ons kantoor er elke dag professioneel en schoon uit. Ze werken flexibel en discreet buiten kantooruren. Een betrouwbare partner die we van harte aanbevelen.",
+    text: "Dankzij Collective Facility Services ziet ons kantoor er elke dag professioneel en schoon uit. Ze werken flexibel en discreet buiten kantooruren. Een betrouwbare partner die we van harte aanbevelen.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     name: "Peter Jansen",
     role: "Office Manager",
     company: "Zuidas Kantoren B.V.",
   },
   {
-    text: "De hospitality-mentaliteit van het team is uniek. Onze gasten merken het verschil. Kamers worden altijd tot in de puntjes schoongemaakt. Echt een aanwinst voor ons hotel.",
+    text: "Wij werken al jaren samen voor receptie en schoonmaak. De hospitality-mentaliteit van het team is uniek. Onze gasten merken het verschil. Echt een aanwinst voor ons hotel.",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
     name: "Lisa Bakker",
     role: "Front Office Manager",
     company: "The Canal House Hotel",
   },
   {
-    text: "Wat ik waardeer aan Collective Clean is de transparantie. We ontvangen wekelijkse kwaliteitsrapportages en hebben een vast aanspreekpunt. Dat geeft vertrouwen.",
+    text: "Wat ik waardeer aan Collective Facility Services is de transparantie. We ontvangen wekelijkse kwaliteitsrapportages en hebben een vast aanspreekpunt. Dat geeft vertrouwen.",
     image: "https://randomuser.me/api/portraits/men/54.jpg",
     name: "Ahmed Benali",
     role: "Hoofd Vastgoed",
     company: "VvE De Oever",
   },
   {
-    text: "In de zorg is hygiëne levensbelangrijk. Collective Clean begrijpt dat en werkt volgens strikte protocollen. Onze medewerkers en cliënten voelen zich veilig.",
+    text: "In de zorg is hygiëne levensbelangrijk. Wij werken met hun schoonmaakteam en beveiliging. Ze werken volgens strikte protocollen. Onze medewerkers en cliënten voelen zich veilig.",
     image: "https://randomuser.me/api/portraits/women/28.jpg",
     name: "Sanne de Vries",
     role: "Locatiemanager",
@@ -53,21 +53,21 @@ const testimonials: Testimonial[] = [
     company: "Amsterdam Fashion Outlet",
   },
   {
-    text: "Snelle opstart, heldere communicatie en een team dat zich echt committed. Collective Clean is meer dan een schoonmaakbedrijf, het is een echte partner.",
+    text: "Snelle opstart, heldere communicatie en een team dat zich echt committed. Van schoonmaak tot receptie, het klopt. Een echte facility partner.",
     image: "https://randomuser.me/api/portraits/women/52.jpg",
     name: "Fleur Hendriks",
     role: "Directeur",
     company: "PerMens Uitzendbureau",
   },
   {
-    text: "We schakelden Collective Clean in voor een groot congres. Het team schaalde op zonder problemen en alles was brandschoon. Professioneel tot en met.",
+    text: "We schakelden Collective Facility Services in voor een groot congres. Het team schaalde op zonder problemen en alles was brandschoon. Professioneel tot en met.",
     image: "https://randomuser.me/api/portraits/men/67.jpg",
     name: "Jeroen van den Berg",
     role: "Event Manager",
     company: "RAI Amsterdam",
   },
   {
-    text: "De medewerkers van Collective Clean zijn altijd vriendelijk en werken hard. Ze zijn een verlengstuk van ons team geworden. We kunnen ze met een gerust hart aanbevelen.",
+    text: "De medewerkers van Collective Facility Services zijn altijd vriendelijk en werken hard. Ze zijn een verlengstuk van ons team geworden. We kunnen ze met een gerust hart aanbevelen.",
     image: "https://randomuser.me/api/portraits/women/37.jpg",
     name: "Emma Scholten",
     role: "HR Manager",
@@ -159,7 +159,7 @@ export default function Testimonials() {
             Wat onze <em className="text-[#D91A5F]">klanten</em> zeggen
           </h2>
           <p className="text-[#0f172a]/50 mt-4">
-            Een selectie van opdrachtgevers die ons vertrouwen voor hun schoonmaak en hospitality.
+            Een selectie van opdrachtgevers die ons vertrouwen voor hun facility services.
           </p>
         </motion.div>
 
