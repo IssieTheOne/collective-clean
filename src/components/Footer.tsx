@@ -48,9 +48,9 @@ export default function Footer() {
                 <span className="text-[#0f172a]/70">Weesperstraat 100F<br />1112 AP Diemen</span>
               </li>
               <li>
-                <a href="mailto:info@collectivefacilityservices.nl" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors flex items-center gap-2">
+                <a href="mailto:info@collective-fs.nl" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors flex items-center gap-2">
                   <Mail size={14} className="flex-shrink-0 text-[#D91A5F]" />
-                  info@collectivefacilityservices.nl
+                  info@collective-fs.nl
                 </a>
               </li>
               <li>

@@ -73,8 +73,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-1">E-mail</p>
-                    <a href="mailto:info@collectivefacilityservices.nl" className="text-[#D91A5F] hover:underline">
-                      info@collectivefacilityservices.nl
+                    <a href="mailto:info@collective-fs.nl" className="text-[#D91A5F] hover:underline">
+                      info@collective-fs.nl
                     </a>
                   </div>
                   <div>
