@@ -79,7 +79,7 @@ export default function OverOns() {
               <div className="editorial-rule-accent" />
             </div>
             <div>
-              <img src="/images/team.jpg" alt="Collective Facility Services team" className="w-full h-[400px] object-cover" />
+              <img src="/images/team.png" alt="Collective Facility Services team" className="w-full h-[400px] object-cover" />
             </div>
           </div>
         </div>

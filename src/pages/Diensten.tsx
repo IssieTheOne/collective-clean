@@ -79,7 +79,7 @@ export default function Diensten() {
                 Alert, representatief en altijd gastgericht. Van objectbeveiliging tot evenementen, 
                 wij zorgen voor een veilige omgeving.
               </p>
-              <img src="/images/beveiliging.jpg" alt="Beveiliging" className="w-full h-64 object-cover" />
+              <img src="/images/facilitair.png" alt="Beveiliging" className="w-full h-64 object-cover" />
             </div>
             <div className="space-y-0">
               {beveiligingServices.map((s, i) => (
@@ -126,7 +126,7 @@ export default function Diensten() {
                 professionele ontvangst die uw bezoekers direct het juiste gevoel geeft. 
                 Gastvrijheid is ons vak.
               </p>
-              <img src="/images/receptie.jpg" alt="Receptie" className="w-full h-64 object-cover" />
+              <img src="/images/facilitair.png" alt="Receptie" className="w-full h-64 object-cover" />
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ export default function Diensten() {
                 Wij verzorgen dagelijks facilitair onderhoud dat aansluit bij uw bedrijfsritme. 
                 SNA gecertificeerd en altijd betrouwbaar.
               </p>
-              <img src="/images/schoonmaak.jpg" alt="Schoonmaak" className="w-full h-64 object-cover" />
+              <img src="/images/schoonmaak.png" alt="Schoonmaak" className="w-full h-64 object-cover" />
             </div>
             <div className="space-y-0">
               {schoonmaakServices.map((s, i) => (
@@ -201,9 +201,7 @@ export default function Diensten() {
                 Van zakelijke lunches tot evenementencatering. Wij verzorgen smaakvolle, 
                 gastvrije catering die past bij uw organisatie. Altijd vers, altijd op maat.
               </p>
-              <div className="w-full h-64 bg-[#D91A5F]/10 flex items-center justify-center">
-                <span className="font-display text-3xl text-[#D91A5F]/30">Catering</span>
-              </div>
+              <img src="/images/catering.png" alt="Catering" className="w-full h-64 object-cover" />
             </div>
           </div>
         </div>

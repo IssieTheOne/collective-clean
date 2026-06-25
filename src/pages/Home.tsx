@@ -10,7 +10,7 @@ const clientLogos = [
   { src: '/images/lt-foods.png', alt: 'LT Foods' },
   { src: '/images/lx-pantos.png', alt: 'LX Pantos' },
   { src: '/images/british-school.jpg', alt: 'The British School of Amsterdam' },
-  { src: '/images/veluwe-hotel.jpg', alt: 'Veluwe Hotel de Beyaard' },
+  { src: '/images/hotel-beyaerd.png', alt: 'Veluwe Hotel de Beyaard' },
 ]
 
 export default function Home() {
@@ -41,21 +41,21 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-8">
             {[
               {
-                img: '/images/beveiliging.jpg',
+                img: '/images/facilitair.png',
                 label: 'Facilitair',
                 title: 'Facilitair',
                 desc: 'Beveiliging en receptie onder één dak. Onze medewerkers zijn het visitekaartje van uw organisatie.',
                 link: '/diensten#facilitair',
               },
               {
-                img: '/images/schoonmaak.jpg',
+                img: '/images/schoonmaak.png',
                 label: 'Schoonmaak',
                 title: 'Schoonmaak',
                 desc: 'Dagelijks facilitair onderhoud en hospitality cleaning. Van kantoor tot hotel, van VvE tot zorginstelling. SNA gecertificeerd.',
                 link: '/diensten#schoonmaak',
               },
               {
-                img: '/images/receptie.jpg',
+                img: '/images/catering.png',
                 label: 'Catering',
                 title: 'Catering',
                 desc: 'Van zakelijke lunches tot evenementencatering. Smaakvol, gastvrij en altijd op maat.',
@@ -175,7 +175,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/images/team.jpg"
+                src="/images/team.png"
                 alt="Collective Facility Services team"
                 className="w-full h-[400px] sm:h-[500px] object-cover"
               />
@@ -187,7 +187,7 @@ export default function Home() {
               </h2>
               <div className="space-y-5">
                 {[
-                  'Gecertificeerde medewerkers (VCU, SNA)',
+                  'Vakbekwame personeel (VCU, SNA)',
                   'Digitale kwaliteitsrapportages, altijd inzicht',
                   'Flexibel inschalen als het druk wordt',
                   'Eén vast aanspreekpunt voor u',
