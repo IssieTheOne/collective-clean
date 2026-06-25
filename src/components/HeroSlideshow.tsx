@@ -71,7 +71,7 @@ export default function HeroSlideshow() {
   const slide = slides[active]
 
   return (
-    <section className="relative h-[70vh] sm:h-[80vh] lg:h-[85vh] min-h-[500px] bg-[#0f172a] overflow-hidden">
+    <section className="relative h-[70vh] sm:h-[80vh] lg:h-[85vh] min-h-[500px] overflow-hidden">
       {/* Background Images */}
       {slides.map((s, i) => (
         <div

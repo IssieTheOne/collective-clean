@@ -26,8 +26,15 @@ const schoonmaakServices = [
   { title: 'Vloeronderhoud', desc: 'Periodiek vloeronderhoud, strippen, inpoetsen en dieptereiniging.' },
 ]
 
+const cateringServices = [
+  { title: 'Evenementencatering', desc: 'Complete catering voor zakelijke evenementen, congressen en bedrijfsbijeenkomsten.' },
+  { title: 'Kantoorcatering', desc: 'Dagelijkse lunchservice, koffie- en thee-arrangementen voor uw werkomgeving.' },
+  { title: 'Hospitality Catering', desc: 'Gastvrije catering voor hotels, recepties en hospitality-locaties.' },
+  { title: 'Maatwerkmenu', desc: 'Menu\'s op maat, afgestemd op dieetwensen, cultuur en gelegenheid.' },
+]
+
 const features = [
-  'Gecertificeerde medewerkers (VCU, SNA)',
+  'Vakbekwame personeel (VCU, SNA)',
   'Digitale kwaliteitsrapportages, altijd inzicht',
   'Flexibel inschalen als het druk wordt',
   'Transparante urenregistratie',
@@ -39,30 +46,37 @@ export default function Diensten() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[#0f172a] py-24 sm:py-32">
+      <section className="py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Diensten</p>
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#fafaf8] leading-[0.95] max-w-4xl">
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#0f172a] leading-[0.95] max-w-4xl">
             Uw partner in <em className="text-[#D91A5F]">facility</em> services
           </h1>
-          <p className="mt-8 text-[#fafaf8]/50 max-w-2xl leading-relaxed">
-            Drie pijlers onder één dak: beveiliging, receptie en schoonmaak. 
+          <p className="mt-8 text-[#0f172a]/50 max-w-2xl leading-relaxed">
+            Vier pijlers onder één dak: facilitair, schoonmaak en catering. 
             Altijd met dezelfde focus op kwaliteit en klanttevredenheid.
           </p>
         </div>
       </section>
 
-      {/* Beveiliging */}
-      <section id="beveiliging" className="scroll-mt-24 py-20 sm:py-28 bg-[#fafaf8]">
+      {/* Facilitair */}
+      <section id="facilitair" className="scroll-mt-24 py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 01</p>
+          <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
+            <em className="text-[#D91A5F]">Facilitair</em>
+          </h2>
+          <div className="editorial-rule-accent mb-6" />
+          <p className="text-[#0f172a]/60 leading-relaxed mb-12 max-w-3xl">
+            Onze facilitaire diensten bundelen beveiliging en receptie. 
+            Wij zijn het visitekaartje van uw organisatie. Alert, representatief en altijd gastgericht.
+          </p>
+
+          {/* Beveiliging */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 mb-20">
             <div>
-              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 01</p>
-              <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
-                <em className="text-[#D91A5F]">Beveiliging</em>
-              </h2>
-              <div className="editorial-rule-accent mb-6" />
-              <p className="text-[#0f172a]/60 leading-relaxed mb-8">
+              <h3 className="font-display text-3xl text-[#0f172a] mb-4">Beveiliging</h3>
+              <p className="text-[#0f172a]/60 leading-relaxed mb-6">
                 Onze beveiligers zijn meer dan een uniform. Zij zijn het visitekaartje van uw organisatie. 
                 Alert, representatief en altijd gastgericht. Van objectbeveiliging tot evenementen, 
                 wij zorgen voor een veilige omgeving.
@@ -87,12 +101,8 @@ export default function Diensten() {
               <div className="editorial-rule" />
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Receptie */}
-      <section id="receptie" className="scroll-mt-24 py-20 sm:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          {/* Receptie */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div className="order-2 lg:order-1 space-y-0">
               {receptieServices.map((s, i) => (
@@ -112,12 +122,8 @@ export default function Diensten() {
               <div className="editorial-rule" />
             </div>
             <div className="order-1 lg:order-2">
-              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 02</p>
-              <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
-                <em className="text-[#D91A5F]">Receptie</em>
-              </h2>
-              <div className="editorial-rule-accent mb-6" />
-              <p className="text-[#0f172a]/60 leading-relaxed mb-8">
+              <h3 className="font-display text-3xl text-[#0f172a] mb-4">Receptie</h3>
+              <p className="text-[#0f172a]/60 leading-relaxed mb-6">
                 De receptie is het hart van uw organisatie. Wij zorgen voor een warme, 
                 professionele ontvangst die uw bezoekers direct het juiste gevoel geeft. 
                 Gastvrijheid is ons vak.
@@ -129,11 +135,11 @@ export default function Diensten() {
       </section>
 
       {/* Schoonmaak */}
-      <section id="schoonmaak" className="scroll-mt-24 py-20 sm:py-28 bg-[#fafaf8]">
+      <section id="schoonmaak" className="scroll-mt-24 py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 03</p>
+              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 02</p>
               <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
                 <em className="text-[#D91A5F]">Schoonmaak</em>
               </h2>
@@ -166,8 +172,47 @@ export default function Diensten() {
         </div>
       </section>
 
+      {/* Catering */}
+      <section id="catering" className="scroll-mt-24 py-20 sm:py-28 border-t border-[#0f172a]/8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+            <div className="order-2 lg:order-1 space-y-0">
+              {cateringServices.map((s, i) => (
+                <div key={s.title} className="group">
+                  {i > 0 && <div className="editorial-rule" />}
+                  <div className="py-6">
+                    <div className="flex items-baseline gap-4">
+                      <span className="font-display text-3xl text-[#0f172a]/10 group-hover:text-[#D91A5F]/20 transition-colors">0{i + 1}</span>
+                      <div>
+                        <h3 className="font-display text-xl text-[#0f172a] group-hover:text-[#D91A5F] transition-colors">{s.title}</h3>
+                        <p className="mt-1 text-sm text-[#0f172a]/50 leading-relaxed max-w-md">{s.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="editorial-rule" />
+            </div>
+            <div className="order-1 lg:order-2">
+              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 03</p>
+              <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
+                <em className="text-[#D91A5F]">Catering</em>
+              </h2>
+              <div className="editorial-rule-accent mb-6" />
+              <p className="text-[#0f172a]/60 leading-relaxed mb-8">
+                Van zakelijke lunches tot evenementencatering. Wij verzorgen smaakvolle, 
+                gastvrije catering die past bij uw organisatie. Altijd vers, altijd op maat.
+              </p>
+              <div className="w-full h-64 bg-[#D91A5F]/10 flex items-center justify-center">
+                <span className="font-display text-3xl text-[#D91A5F]/30">Catering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-12">
             <div>
@@ -185,25 +230,6 @@ export default function Diensten() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 sm:py-28 bg-[#0f172a]">
-        <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-          <h2 className="font-display text-4xl sm:text-5xl text-[#fafaf8] leading-tight mb-6">
-            Drie diensten, <em className="text-[#D91A5F]">één partner</em>
-          </h2>
-          <p className="text-[#fafaf8]/50 max-w-xl mx-auto mb-8">
-            Neem contact op voor een vrijblijvende offerte of plan een kennismaking.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[#D91A5F] text-white text-sm font-body tracking-wide hover:bg-[#b0154a] transition-colors"
-          >
-            Offerte aanvragen
-            <ArrowRight size={16} className="ml-2" />
-          </Link>
         </div>
       </section>
     </div>

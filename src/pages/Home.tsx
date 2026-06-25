@@ -4,6 +4,15 @@ import TeamShowcase from '../components/TeamShowcase'
 import Testimonials from '../components/Testimonials'
 import MVO from '../components/MVO'
 
+const clientLogos = [
+  { src: '/images/concentrix.png', alt: 'Concentrix' },
+  { src: '/images/ibis.webp', alt: 'Ibis Styles Hotel' },
+  { src: '/images/lt-foods.png', alt: 'LT Foods' },
+  { src: '/images/lx-pantos.png', alt: 'LX Pantos' },
+  { src: '/images/british-school.jpg', alt: 'The British School of Amsterdam' },
+  { src: '/images/veluwe-hotel.jpg', alt: 'Veluwe Hotel de Beyaard' },
+]
+
 export default function Home() {
   return (
     <div>
@@ -11,7 +20,7 @@ export default function Home() {
       <HeroSlideshow />
 
       {/* ===== MANIFESTO ===== */}
-      <section className="py-20 sm:py-28 bg-[#fafaf8]">
+      <section className="py-20 sm:py-28">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <div className="editorial-rule-accent mb-10" />
           <p className="font-display text-2xl sm:text-3xl lg:text-4xl text-[#0f172a] leading-snug max-w-4xl">
@@ -27,23 +36,16 @@ export default function Home() {
       </section>
 
       {/* ===== SERVICES PREVIEW ===== */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-8">
             {[
               {
                 img: '/images/beveiliging.jpg',
-                label: 'Beveiliging',
-                title: 'Beveiliging',
-                desc: 'Professionele beveiligingsdiensten voor kantoren, winkels, evenementen en vastgoed. Onze beveiligers zijn representatief, alert en klantgericht.',
-                link: '/diensten#beveiliging',
-              },
-              {
-                img: '/images/receptie.jpg',
-                label: 'Receptie',
-                title: 'Receptie',
-                desc: 'Uw eerste indruk is onze zorg. Gastvrije receptiediensten voor bedrijven, hotels en organisaties. Professioneel, warm en efficiënt.',
-                link: '/diensten#receptie',
+                label: 'Facilitair',
+                title: 'Facilitair',
+                desc: 'Beveiliging en receptie onder één dak. Onze medewerkers zijn het visitekaartje van uw organisatie.',
+                link: '/diensten#facilitair',
               },
               {
                 img: '/images/schoonmaak.jpg',
@@ -51,6 +53,13 @@ export default function Home() {
                 title: 'Schoonmaak',
                 desc: 'Dagelijks facilitair onderhoud en hospitality cleaning. Van kantoor tot hotel, van VvE tot zorginstelling. SNA gecertificeerd.',
                 link: '/diensten#schoonmaak',
+              },
+              {
+                img: '/images/receptie.jpg',
+                label: 'Catering',
+                title: 'Catering',
+                desc: 'Van zakelijke lunches tot evenementencatering. Smaakvol, gastvrij en altijd op maat.',
+                link: '/diensten#catering',
               },
             ].map((s) => (
               <Link key={s.title} to={s.link} className="group block">
@@ -84,7 +93,7 @@ export default function Home() {
       <TeamShowcase />
 
       {/* ===== SECTORS ===== */}
-      <section className="py-20 sm:py-28 bg-[#fafaf8]">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-12 mb-16">
             <div className="lg:col-span-2">
@@ -130,7 +139,7 @@ export default function Home() {
       </section>
 
       {/* ===== PROCESS ===== */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-2xl mb-16">
             <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Werkwijze</p>
@@ -161,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* ===== WHY US ===== */}
-      <section className="py-20 sm:py-28 bg-[#fafaf8]">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="order-2 lg:order-1">
@@ -178,7 +187,6 @@ export default function Home() {
               </h2>
               <div className="space-y-5">
                 {[
-                  'Drie diensten, één aanspreekpunt',
                   'Gecertificeerde medewerkers (VCU, SNA)',
                   'Digitale kwaliteitsrapportages, altijd inzicht',
                   'Flexibel inschalen als het druk wordt',
@@ -207,8 +215,29 @@ export default function Home() {
       {/* ===== TESTIMONIALS ===== */}
       <Testimonials />
 
+      {/* ===== CLIENT LOGOS ===== */}
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="text-center mb-14">
+            <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Vertrouwd door</p>
+            <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a]">Onze klanten</h2>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
+            {clientLogos.map((logo) => (
+              <div key={logo.alt} className="w-full flex items-center justify-center p-4">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== CERTS ===== */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-14">
             <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Compliance</p>

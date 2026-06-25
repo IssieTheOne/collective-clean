@@ -28,13 +28,13 @@ export default function OverOns() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[#0f172a] py-24 sm:py-32">
+      <section className="py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Over Ons</p>
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#fafaf8] leading-[0.95] max-w-4xl">
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#0f172a] leading-[0.95] max-w-4xl">
             Uw <em className="text-[#D91A5F]">facilitaire</em> partner
           </h1>
-          <p className="mt-8 text-[#fafaf8]/50 max-w-2xl leading-relaxed">
+          <p className="mt-8 text-[#0f172a]/50 max-w-2xl leading-relaxed">
             Collective Facility Services bundelt beveiliging, receptie en schoonmaak. 
             Met jarenlange ervaring in hospitality en facilitair management brengen wij 
             een unieke combinatie van flexibiliteit, kwaliteit en gastgerichtheid.
@@ -43,12 +43,12 @@ export default function OverOns() {
       </section>
 
       {/* Stats */}
-      <section className="border-b border-[#0f172a]/8 bg-[#fafaf8]">
+      <section className="border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { num: '200+', label: 'Medewerkers' },
-              { num: '75+', label: 'Opdrachtgevers' },
+              { num: '+25', label: 'Opdrachtgevers' },
               { num: '8+', label: 'Jaar ervaring' },
               { num: '98%', label: 'Klanttevredenheid' },
             ].map((s) => (
@@ -62,7 +62,7 @@ export default function OverOns() {
       </section>
 
       {/* Mission */}
-      <section className="py-20 sm:py-28 bg-[#fafaf8]">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
@@ -86,7 +86,7 @@ export default function OverOns() {
       </section>
 
       {/* Values */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Kernwaarden</p>
           <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-12">
@@ -104,7 +104,7 @@ export default function OverOns() {
       </section>
 
       {/* Differentiators */}
-      <section className="py-20 sm:py-28 bg-[#fafaf8]">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
@@ -131,7 +131,7 @@ export default function OverOns() {
       </section>
 
       {/* Compliance */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Compliance</p>
           <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-12">
@@ -149,12 +149,12 @@ export default function OverOns() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 sm:py-28 bg-[#0f172a]">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
-          <h2 className="font-display text-4xl sm:text-5xl text-[#fafaf8] leading-tight mb-6">
+          <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
             Kennismaken?
           </h2>
-          <p className="text-[#fafaf8]/50 max-w-xl mx-auto mb-8">
+          <p className="text-[#0f172a]/50 max-w-xl mx-auto mb-8">
             Wij komen graag bij u langs om de mogelijkheden te bespreken.
           </p>
           <Link

@@ -1,7 +1,7 @@
+import { useForm, ValidationError } from '@formspree/react'
 import { Link } from 'react-router'
 import { ArrowRight, MapPin, Clock, Briefcase, CheckCircle, Send } from 'lucide-react'
-import { useForm, ValidationError } from '@formspree/react'
-import { useState } from 'react'
+import { useState, FormEvent } from 'react'
 
 const vacancies = [
   {
@@ -169,21 +169,21 @@ export default function Vacatures() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[#0f172a] py-24 sm:py-32">
+      <section className="py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Vacatures</p>
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#fafaf8] leading-[0.95] max-w-4xl">
+          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Werken bij</p>
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#0f172a] leading-[0.95] max-w-4xl">
             Word onderdeel van <em className="text-[#D91A5F]">ons team</em>
           </h1>
-          <p className="mt-8 text-[#fafaf8]/50 max-w-2xl leading-relaxed">
+          <p className="mt-8 text-[#0f172a]/50 max-w-2xl leading-relaxed">
             Wij zijn altijd op zoek naar gemotiveerde collega's voor beveiliging, receptie en schoonmaak. 
-            Bekijk onze openstaande vacatures en solliciteer direct.
+            Bekijk onze openstaande functies en solliciteer direct.
           </p>
         </div>
       </section>
 
       {/* Why work here */}
-      <section className="py-16 sm:py-20 bg-[#fafaf8]">
+      <section className="py-16 sm:py-20 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-10">
             <div>
@@ -211,7 +211,7 @@ export default function Vacatures() {
       </section>
 
       {/* Vacancies */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-16 sm:py-20 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-baseline justify-between mb-12">
             <div>
@@ -223,7 +223,7 @@ export default function Vacatures() {
 
           <div className="space-y-8">
             {vacancies.map((v) => (
-              <div key={v.id} className="border border-[#0f172a]/10 bg-[#fafaf8]">
+              <div key={v.id} className="border border-[#0f172a]/10">
                 <div className="p-6 sm:p-8">
                   <div className="flex flex-wrap items-center gap-3 mb-4">
                     <span className="text-xs font-body text-[#D91A5F] tracking-widest uppercase bg-[#D91A5F]/5 px-3 py-1">{v.category}</span>
@@ -249,7 +249,7 @@ export default function Vacatures() {
                   </div>
                 </div>
 
-                <div className="bg-[#fafaf8] border-t border-[#0f172a]/8 px-8 py-8 sm:px-10 sm:py-10">
+                <div className="border-t border-[#0f172a]/8 px-8 py-8 sm:px-10 sm:py-10">
                   <SollicitatieForm vacancyTitle={v.title} />
                 </div>
               </div>
@@ -259,7 +259,7 @@ export default function Vacatures() {
       </section>
 
       {/* Open application */}
-      <section className="py-16 sm:py-20 bg-[#fafaf8]">
+      <section className="py-16 sm:py-20 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -276,7 +276,7 @@ export default function Vacatures() {
                 Open sollicitatie versturen <ArrowRight size={16} className="ml-2" />
               </Link>
             </div>
-            <div className="bg-white border border-[#0f172a]/10 p-8">
+            <div className="border border-[#0f172a]/10 p-8">
               <h3 className="font-display text-xl text-[#0f172a] mb-4">Wij zoeken onder andere</h3>
               <div className="space-y-3">
                 {[

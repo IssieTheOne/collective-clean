@@ -7,25 +7,13 @@ export default function Footer() {
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1">
-            <img
-              src="/images/logo-final.png"
-              alt="Collective Facility Services"
-              className="h-24 w-auto mb-4"
-            />
-            <p className="text-sm text-[#0f172a]/50 leading-relaxed">
-              Uw landelijke partner in beveiliging, receptie en schoonmaak.
-            </p>
-          </div>
-
           {/* Diensten */}
           <div>
             <h3 className="text-xs font-body text-[#0f172a]/40 tracking-widest uppercase mb-5">Diensten</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/diensten#beveiliging" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Beveiliging</Link></li>
-              <li><Link to="/diensten#receptie" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Receptie</Link></li>
+              <li><Link to="/diensten#facilitair" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Facilitair</Link></li>
               <li><Link to="/diensten#schoonmaak" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Schoonmaak</Link></li>
+              <li><Link to="/diensten#catering" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Catering</Link></li>
             </ul>
           </div>
 
@@ -72,6 +60,30 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* Navigatie */}
+          <div>
+            <h3 className="text-xs font-body text-[#0f172a]/40 tracking-widest uppercase mb-5">Navigatie</h3>
+            <ul className="space-y-3 text-sm">
+              <li><Link to="/" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Home</Link></li>
+              <li><Link to="/diensten" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Diensten</Link></li>
+              <li><Link to="/over-ons" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Over Ons</Link></li>
+              <li><Link to="/vacatures" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Werken bij</Link></li>
+              <li><Link to="/contact" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Contact</Link></li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Centered Logo */}
+        <div className="mt-14 flex flex-col items-center">
+          <img
+            src="/images/logo-final.png"
+            alt="Collective Facility Services"
+            className="h-20 w-auto mb-4"
+          />
+          <p className="text-sm text-[#0f172a]/50 leading-relaxed text-center">
+            Uw landelijke partner in beveiliging, receptie, schoonmaak en catering.
+          </p>
         </div>
 
         {/* Bottom bar */}

@@ -7,17 +7,17 @@ export default function Contact() {
   if (state.succeeded) {
     return (
       <div>
-        <section className="bg-[#0f172a] py-24 sm:py-32">
+        <section className="py-24 sm:py-32">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Contact</p>
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#fafaf8] leading-[0.95] max-w-4xl">
+            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#0f172a] leading-[0.95] max-w-4xl">
               Laten we <em className="text-[#D91A5F]">kennismaken</em>
             </h1>
           </div>
         </section>
-        <section className="py-20 sm:py-28 bg-[#fafaf8]">
+        <section className="py-20 sm:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
-            <div className="bg-white border border-[#0f172a]/8 p-12 text-center max-w-2xl mx-auto">
+            <div className="border border-[#0f172a]/8 p-12 text-center max-w-2xl mx-auto">
               <div className="w-12 h-12 rounded-full bg-[#D91A5F]/10 flex items-center justify-center mx-auto mb-4">
                 <CheckCircle size={24} className="text-[#D91A5F]" />
               </div>
@@ -35,13 +35,13 @@ export default function Contact() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-[#0f172a] py-24 sm:py-32">
+      <section className="py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-6">Contact</p>
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#fafaf8] leading-[0.95] max-w-4xl">
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-[#0f172a] leading-[0.95] max-w-4xl">
             Laten we <em className="text-[#D91A5F]">kennismaken</em>
           </h1>
-          <p className="mt-8 text-[#fafaf8]/50 max-w-2xl leading-relaxed">
+          <p className="mt-8 text-[#0f172a]/50 max-w-2xl leading-relaxed">
             Heeft u vragen of wilt u een vrijblijvende offerte aanvragen? 
             Wij reageren binnen 24 uur.
           </p>
@@ -49,7 +49,7 @@ export default function Contact() {
       </section>
 
       {/* Contact */}
-      <section className="py-20 sm:py-28 bg-[#fafaf8]">
+      <section className="py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-16">
             {/* Info */}
@@ -105,7 +105,7 @@ export default function Contact() {
 
             {/* Form */}
             <div className="lg:col-span-2">
-              <form onSubmit={handleSubmit} className="bg-white border border-[#0f172a]/8 p-8 sm:p-10">
+              <form onSubmit={handleSubmit} className="border border-[#0f172a]/8 p-8 sm:p-10">
                 <h3 className="font-display text-2xl text-[#0f172a] mb-2">Vraag een offerte aan</h3>
                 <div className="editorial-rule-accent mb-8" />
 
@@ -166,15 +166,10 @@ export default function Contact() {
                     className="w-full px-4 py-3 border border-[#0f172a]/10 bg-[#fafaf8] text-sm focus:outline-none focus:border-[#D91A5F] transition-colors"
                   >
                     <option value="">Selecteer een dienst</option>
-                    <option value="beveiliging">Beveiliging</option>
-                    <option value="receptie">Receptie</option>
-                    <option value="schoonmaak-kantoor">Schoonmaak Kantoor</option>
-                    <option value="schoonmaak-hotel">Schoonmaak Hotel</option>
-                    <option value="vve">VvE Onderhoud</option>
-                    <option value="zorg">Zorgschoonmaak</option>
-                    <option value="retail">Retail Cleaning</option>
-                    <option value="evenementen">Evenementen</option>
-                    <option value="anders">Combinatie / Maatwerk</option>
+                    <option value="facilitair">Facilitair</option>
+                    <option value="schoonmaak">Schoonmaak</option>
+                    <option value="catering">Catering</option>
+                    <option value="combinatie">Combinatie / Maatwerk</option>
                   </select>
                 </div>
 
