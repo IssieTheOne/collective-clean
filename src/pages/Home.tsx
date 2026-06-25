@@ -5,12 +5,11 @@ import Testimonials from '../components/Testimonials'
 import MVO from '../components/MVO'
 
 const clientLogos = [
-  { src: '/images/concentrix.png', alt: 'Concentrix' },
-  { src: '/images/ibis.webp', alt: 'Ibis Styles Hotel' },
-  { src: '/images/lt-foods.png', alt: 'LT Foods' },
-  { src: '/images/lx-pantos.png', alt: 'LX Pantos' },
-  { src: '/images/british-school.jpg', alt: 'The British School of Amsterdam' },
-  { src: '/images/hotel-beyaerd.png', alt: 'Veluwe Hotel de Beyaard' },
+  { src: '/images/client-1.png', alt: 'Client 1' },
+  { src: '/images/client-2.png', alt: 'Client 2' },
+  { src: '/images/client-3.png', alt: 'Client 3' },
+  { src: '/images/client-4.png', alt: 'Client 4' },
+  { src: '/images/client-5.png', alt: 'Client 5' },
 ]
 
 export default function Home() {
@@ -41,25 +40,25 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-8">
             {[
               {
-                img: '/images/facilitair.png',
-                label: 'Facilitair',
-                title: 'Facilitair',
-                desc: 'Beveiliging en receptie onder één dak. Onze medewerkers zijn het visitekaartje van uw organisatie.',
-                link: '/diensten#facilitair',
+                img: '/images/beveiliging.jpg',
+                label: 'Beveiliging',
+                title: 'Beveiliging',
+                desc: 'Professionele beveiligingsdiensten voor kantoren, winkels, evenementen en vastgoed. Onze beveiligers zijn representatief, alert en klantgericht.',
+                link: '/diensten#beveiliging',
               },
               {
-                img: '/images/schoonmaak.png',
+                img: '/images/receptie.jpg',
+                label: 'Receptie',
+                title: 'Receptie',
+                desc: 'Uw eerste indruk is onze zorg. Gastvrije receptiediensten voor bedrijven, hotels en organisaties. Professioneel, warm en efficiënt.',
+                link: '/diensten#receptie',
+              },
+              {
+                img: '/images/schoonmaak.jpg',
                 label: 'Schoonmaak',
                 title: 'Schoonmaak',
                 desc: 'Dagelijks facilitair onderhoud en hospitality cleaning. Van kantoor tot hotel, van VvE tot zorginstelling. SNA gecertificeerd.',
                 link: '/diensten#schoonmaak',
-              },
-              {
-                img: '/images/catering.png',
-                label: 'Catering',
-                title: 'Catering',
-                desc: 'Van zakelijke lunches tot evenementencatering. Smaakvol, gastvrij en altijd op maat.',
-                link: '/diensten#catering',
               },
             ].map((s) => (
               <Link key={s.title} to={s.link} className="group block">
@@ -175,7 +174,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/images/team.png"
+                src="/images/team.jpg"
                 alt="Collective Facility Services team"
                 className="w-full h-[400px] sm:h-[500px] object-cover"
               />
