@@ -92,22 +92,6 @@ export default function Contact() {
               </div>
 
               <div className="pt-8 border-t border-[#0f172a]/8">
-                <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-4">Adres</p>
-                <p className="text-sm text-[#0f172a]/60">
-                  Weesperstraat 100F<br />
-                  1112 AP Diemen
-                </p>
-                <a
-                  href="https://www.google.com/maps/search/Weesperstraat+100F+Diemen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 mt-2 text-sm text-[#D91A5F] hover:underline"
-                >
-                  Bekijk op Google Maps →
-                </a>
-              </div>
-
-              <div className="pt-8 border-t border-[#0f172a]/8">
                 <p className="text-[#0f172a]/40 uppercase tracking-wider text-xs mb-4">Bel direct</p>
                 <a
                   href="tel:+31208965142"
