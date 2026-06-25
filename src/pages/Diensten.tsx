@@ -32,7 +32,8 @@ const cateringServices = [
 ]
 
 const features = [
-  'Vakbekwame personeel (VCU, SNA)',
+  'Vakbekwame personeel',
+  'Gecertificeerde partner (VCU, SNA)',
   'Digitale kwaliteitsrapportages, altijd inzicht',
   'Flexibel inschalen als het druk wordt',
   'Transparante urenregistratie',
@@ -57,10 +58,48 @@ export default function Diensten() {
         </div>
       </section>
 
+      {/* Schoonmaak */}
+      <section id="schoonmaak" className="scroll-mt-24 py-20 sm:py-28 border-t border-[#0f172a]/8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+            <div>
+              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 01</p>
+              <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
+                <em className="text-[#D91A5F]">Schoonmaak</em>
+              </h2>
+              <div className="editorial-rule-accent mb-6" />
+              <p className="text-[#0f172a]/60 leading-relaxed mb-8">
+                Een schone werkomgeving draagt bij aan productiviteit, gezondheid en imago. 
+                Wij verzorgen dagelijks facilitair onderhoud dat aansluit bij uw bedrijfsritme. 
+                SNA gecertificeerd en altijd betrouwbaar.
+              </p>
+              <img src="/images/schoonmaak.jpg" alt="Schoonmaak" className="w-full h-64 object-cover" />
+            </div>
+            <div className="space-y-0">
+              {schoonmaakServices.map((s, i) => (
+                <div key={s.title} className="group">
+                  {i > 0 && <div className="editorial-rule" />}
+                  <div className="py-6">
+                    <div className="flex items-baseline gap-4">
+                      <span className="font-display text-3xl text-[#0f172a]/10 group-hover:text-[#D91A5F]/20 transition-colors">0{i + 1}</span>
+                      <div>
+                        <h3 className="font-display text-xl text-[#0f172a] group-hover:text-[#D91A5F] transition-colors">{s.title}</h3>
+                        <p className="mt-1 text-sm text-[#0f172a]/50 leading-relaxed max-w-md">{s.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="editorial-rule" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Facilitair */}
       <section id="facilitair" className="scroll-mt-24 py-20 sm:py-28 border-t border-[#0f172a]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 01</p>
+          <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 02</p>
           <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
             <em className="text-[#D91A5F]">Facilitair</em>
           </h2>
@@ -127,44 +166,6 @@ export default function Diensten() {
                 Gastvrijheid is ons vak.
               </p>
               <img src="/images/receptie.jpg" alt="Receptie" className="w-full h-64 object-cover" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Schoonmaak */}
-      <section id="schoonmaak" className="scroll-mt-24 py-20 sm:py-28 border-t border-[#0f172a]/8">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
-            <div>
-              <p className="text-xs font-body text-[#D91A5F] tracking-[0.2em] uppercase mb-4">Pijler 02</p>
-              <h2 className="font-display text-4xl sm:text-5xl text-[#0f172a] leading-tight mb-6">
-                <em className="text-[#D91A5F]">Schoonmaak</em>
-              </h2>
-              <div className="editorial-rule-accent mb-6" />
-              <p className="text-[#0f172a]/60 leading-relaxed mb-8">
-                Een schone werkomgeving draagt bij aan productiviteit, gezondheid en imago. 
-                Wij verzorgen dagelijks facilitair onderhoud dat aansluit bij uw bedrijfsritme. 
-                SNA gecertificeerd en altijd betrouwbaar.
-              </p>
-              <img src="/images/schoonmaak.jpg" alt="Schoonmaak" className="w-full h-64 object-cover" />
-            </div>
-            <div className="space-y-0">
-              {schoonmaakServices.map((s, i) => (
-                <div key={s.title} className="group">
-                  {i > 0 && <div className="editorial-rule" />}
-                  <div className="py-6">
-                    <div className="flex items-baseline gap-4">
-                      <span className="font-display text-3xl text-[#0f172a]/10 group-hover:text-[#D91A5F]/20 transition-colors">0{i + 1}</span>
-                      <div>
-                        <h3 className="font-display text-xl text-[#0f172a] group-hover:text-[#D91A5F] transition-colors">{s.title}</h3>
-                        <p className="mt-1 text-sm text-[#0f172a]/50 leading-relaxed max-w-md">{s.desc}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-              <div className="editorial-rule" />
             </div>
           </div>
         </div>

@@ -5,15 +5,6 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 const dienstenMegaMenu = {
   columns: [
     {
-      title: 'Facilitair',
-      image: '/images/beveiliging.jpg',
-      links: [
-        { label: 'Beveiliging', path: '/diensten#beveiliging' },
-        { label: 'Receptie', path: '/diensten#receptie' },
-        { label: 'Toegangscontrole', path: '/diensten#facilitair' },
-      ],
-    },
-    {
       title: 'Schoonmaak',
       image: '/images/schoonmaak.jpg',
       links: [
@@ -21,6 +12,15 @@ const dienstenMegaMenu = {
         { label: 'Hotel Housekeeping', path: '/diensten#schoonmaak' },
         { label: 'VvE Schoonmaak', path: '/diensten#schoonmaak' },
         { label: 'Glasbewassing', path: '/diensten#schoonmaak' },
+      ],
+    },
+    {
+      title: 'Facilitair',
+      image: '/images/beveiliging.jpg',
+      links: [
+        { label: 'Beveiliging', path: '/diensten#beveiliging' },
+        { label: 'Receptie', path: '/diensten#receptie' },
+        { label: 'Toegangscontrole', path: '/diensten#facilitair' },
       ],
     },
     {
@@ -205,29 +205,6 @@ export default function Navigation() {
                 >
                   {item.label}
                 </Link>
-                {item.megaMenu && (
-                  <div className="ml-4 mt-2 space-y-2">
-                    {dienstenMegaMenu.columns.map((col) => (
-                      <div key={col.title}>
-                        <span className="block text-sm font-semibold text-[#0f172a] mt-2">
-                          {col.title}
-                        </span>
-                        {col.links.map((link) => (
-                          <button
-                            key={link.label}
-                            onClick={() => {
-                              handleDropdownClick(link.path)
-                              setMobileOpen(false)
-                            }}
-                            className="block w-full text-left text-sm text-[#0f172a]/60 hover:text-[#D91A5F] pl-2 py-1 cursor-pointer"
-                          >
-                            {link.label}
-                          </button>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-                )}
               </div>
             ))}
           </div>

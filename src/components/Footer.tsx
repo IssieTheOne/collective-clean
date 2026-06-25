@@ -11,8 +11,8 @@ export default function Footer() {
           <div>
             <h3 className="text-xs font-body text-[#0f172a]/40 tracking-widest uppercase mb-5">Diensten</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/diensten#facilitair" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Facilitair</Link></li>
               <li><Link to="/diensten#schoonmaak" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Schoonmaak</Link></li>
+              <li><Link to="/diensten#facilitair" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Facilitair</Link></li>
               <li><Link to="/diensten#catering" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Catering</Link></li>
             </ul>
           </div>

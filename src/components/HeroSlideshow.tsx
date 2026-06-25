@@ -4,16 +4,6 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const slides = [
   {
-    id: 'facilitair',
-    image: '/images/beveiliging.jpg',
-    eyebrow: 'Facilitair',
-    title: 'Beveiliging',
-    titleEm: 'Receptie',
-    desc: 'Beveiliging en receptie onder één dak. Onze medewerkers zijn het visitekaartje van uw organisatie.',
-    cta: 'Bekijk facilitair',
-    ctaLink: '/diensten#facilitair',
-  },
-  {
     id: 'schoonmaak',
     image: '/images/schoonmaak.jpg',
     eyebrow: 'Schoonmaak',
@@ -22,6 +12,16 @@ const slides = [
     desc: 'Dagelijks facilitair onderhoud en hospitality cleaning. SNA gecertificeerd, altijd betrouwbaar.',
     cta: 'Bekijk schoonmaak',
     ctaLink: '/diensten#schoonmaak',
+  },
+  {
+    id: 'facilitair',
+    image: '/images/beveiliging.jpg',
+    eyebrow: 'Facilitair',
+    title: 'Beveiliging',
+    titleEm: 'Receptie',
+    desc: 'Beveiliging en receptie onder één dak. Onze medewerkers zijn het visitekaartje van uw organisatie.',
+    cta: 'Bekijk facilitair',
+    ctaLink: '/diensten#facilitair',
   },
   {
     id: 'catering',

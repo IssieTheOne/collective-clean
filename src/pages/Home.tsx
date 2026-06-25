@@ -41,34 +41,40 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-8">
             {[
               {
-                img: '/images/beveiliging.jpg',
-                label: 'Beveiliging',
-                title: 'Beveiliging',
-                desc: 'Professionele beveiligingsdiensten voor kantoren, winkels, evenementen en vastgoed. Onze beveiligers zijn representatief, alert en klantgericht.',
-                link: '/diensten#beveiliging',
-              },
-              {
-                img: '/images/receptie.jpg',
-                label: 'Receptie',
-                title: 'Receptie',
-                desc: 'Uw eerste indruk is onze zorg. Gastvrije receptiediensten voor bedrijven, hotels en organisaties. Professioneel, warm en efficiënt.',
-                link: '/diensten#receptie',
-              },
-              {
                 img: '/images/schoonmaak.jpg',
                 label: 'Schoonmaak',
                 title: 'Schoonmaak',
                 desc: 'Dagelijks facilitair onderhoud en hospitality cleaning. Van kantoor tot hotel, van VvE tot zorginstelling. SNA gecertificeerd.',
                 link: '/diensten#schoonmaak',
               },
+              {
+                img: '/images/beveiliging.jpg',
+                label: 'Facilitair',
+                title: 'Facilitair',
+                desc: 'Beveiliging en receptie onder één dak. Onze medewerkers zijn het visitekaartje van uw organisatie.',
+                link: '/diensten#facilitair',
+              },
+              {
+                img: null,
+                label: 'Catering',
+                title: 'Catering',
+                desc: 'Van zakelijke lunches tot evenementencatering. Smaakvol, gastvrij en altijd op maat.',
+                link: '/diensten#catering',
+              },
             ].map((s) => (
               <Link key={s.title} to={s.link} className="group block">
                 <div className="relative overflow-hidden">
-                  <img
-                    src={s.img}
-                    alt={s.title}
-                    className="w-full h-64 sm:h-72 object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  {s.img ? (
+                    <img
+                      src={s.img}
+                      alt={s.title}
+                      className="w-full h-64 sm:h-72 object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-64 sm:h-72 bg-[#D91A5F]/10 flex items-center justify-center">
+                      <span className="font-display text-2xl text-[#D91A5F]/30">{s.title}</span>
+                    </div>
+                  )}
                   <span className="absolute top-4 left-4 text-xs font-body text-white/80 tracking-widest uppercase bg-[#0f172a]/60 px-3 py-1.5">
                     {s.label}
                   </span>
@@ -187,7 +193,8 @@ export default function Home() {
               </h2>
               <div className="space-y-5">
                 {[
-                  'Vakbekwame personeel (VCU, SNA)',
+                  'Vakbekwame personeel',
+                  'Gecertificeerde partner (VCU, SNA)',
                   'Digitale kwaliteitsrapportages, altijd inzicht',
                   'Flexibel inschalen als het druk wordt',
                   'Eén vast aanspreekpunt voor u',
