@@ -10,6 +10,7 @@ const clientLogos = [
   { src: '/images/client-3.png', alt: 'Client 3' },
   { src: '/images/client-4.png', alt: 'Client 4' },
   { src: '/images/client-5.png', alt: 'Client 5' },
+  { src: '/images/client-6.png', alt: 'Client 6' },
 ]
 
 export default function Home() {

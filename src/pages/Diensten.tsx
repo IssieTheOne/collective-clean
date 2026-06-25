@@ -201,7 +201,9 @@ export default function Diensten() {
                 Van zakelijke lunches tot evenementencatering. Wij verzorgen smaakvolle, 
                 gastvrije catering die past bij uw organisatie. Altijd vers, altijd op maat.
               </p>
-              <img src="/images/catering.png" alt="Catering" className="w-full h-64 object-cover" />
+              <div className="w-full h-64 bg-[#D91A5F]/10 flex items-center justify-center">
+                <span className="font-display text-3xl text-[#D91A5F]/30">Catering</span>
+              </div>
             </div>
           </div>
         </div>

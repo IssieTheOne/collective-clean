@@ -4,24 +4,14 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const slides = [
   {
-    id: 'beveiliging',
+    id: 'facilitair',
     image: '/images/beveiliging.jpg',
-    eyebrow: 'Beveiliging',
-    title: 'Uw veiligheid',
-    titleEm: 'ons vak',
-    desc: 'Van objectbeveiliging tot evenementen. Onze beveiligers zijn representatief, alert en altijd gastgericht.',
-    cta: 'Bekijk beveiliging',
-    ctaLink: '/diensten#beveiliging',
-  },
-  {
-    id: 'receptie',
-    image: '/images/receptie.jpg',
-    eyebrow: 'Receptie',
-    title: 'Het eerste',
-    titleEm: 'gezicht',
-    desc: 'Een warme ontvangst die indruk maakt. Professioneel gastheerschap voor bedrijven, hotels en evenementen.',
-    cta: 'Bekijk receptie',
-    ctaLink: '/diensten#receptie',
+    eyebrow: 'Facilitair',
+    title: 'Beveiliging',
+    titleEm: 'Receptie',
+    desc: 'Beveiliging en receptie onder één dak. Onze medewerkers zijn het visitekaartje van uw organisatie.',
+    cta: 'Bekijk facilitair',
+    ctaLink: '/diensten#facilitair',
   },
   {
     id: 'schoonmaak',
@@ -32,6 +22,16 @@ const slides = [
     desc: 'Dagelijks facilitair onderhoud en hospitality cleaning. SNA gecertificeerd, altijd betrouwbaar.',
     cta: 'Bekijk schoonmaak',
     ctaLink: '/diensten#schoonmaak',
+  },
+  {
+    id: 'catering',
+    image: '/images/catering.png',
+    eyebrow: 'Catering',
+    title: 'Smaakvol',
+    titleEm: 'gastvrij',
+    desc: 'Van zakelijke lunches tot evenementencatering. Smaakvol, gastvrij en altijd op maat.',
+    cta: 'Bekijk catering',
+    ctaLink: '/diensten#catering',
   },
 ]
 
