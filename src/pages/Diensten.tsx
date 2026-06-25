@@ -1,5 +1,3 @@
-import { Link } from 'react-router'
-import { ArrowRight } from 'lucide-react'
 
 const beveiligingServices = [
   { title: 'Objectbeveiliging', desc: 'Beveiliging van kantoorpanden, winkels, bouwplaatsen en industrieterreinen.' },

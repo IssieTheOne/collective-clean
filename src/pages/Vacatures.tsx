@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from '@formspree/react'
 import { Link } from 'react-router'
 import { ArrowRight, MapPin, Clock, Briefcase, CheckCircle, Send } from 'lucide-react'
-import { useState, FormEvent } from 'react'
+import { useState } from 'react'
 
 const vacancies = [
   {
