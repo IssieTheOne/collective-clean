@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { Link, useLocation } from 'react-router'
+import { Link, useLocation, useNavigate } from 'react-router'
 import { Menu, X, ChevronDown } from 'lucide-react'
 
 const dienstenMegaMenu = {
@@ -36,15 +36,7 @@ const dienstenMegaMenu = {
 }
 
 const navItems = [
-  {
-    label: 'Home',
-    path: '/',
-    dropdown: [
-      { label: 'Diensten', path: '/diensten' },
-      { label: 'Over Ons', path: '/over-ons' },
-      { label: 'Contact', path: '/contact' },
-    ],
-  },
+  { label: 'Home', path: '/' },
   {
     label: 'Diensten',
     path: '/diensten',
@@ -59,6 +51,7 @@ export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
   const location = useLocation()
+  const navigate = useNavigate()
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const handleMouseEnter = (label: string) => {
@@ -75,6 +68,30 @@ export default function Navigation() {
   useEffect(() => {
     setOpenDropdown(null)
   }, [location])
+
+  const handleDropdownClick = (path: string) => {
+    setOpenDropdown(null)
+    const [targetPath, hash] = path.split('#')
+
+    if (targetPath === location.pathname && hash) {
+      // Same page hash navigation - scroll directly
+      const el = document.getElementById(hash)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    } else if (targetPath !== location.pathname && hash) {
+      // Different page with hash - navigate then scroll
+      navigate(path)
+      setTimeout(() => {
+        const el = document.getElementById(hash)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 250)
+    } else {
+      navigate(path)
+    }
+  }
 
   return (
     <nav className="bg-white border-b border-[#0f172a]/8 sticky top-0 z-50">
@@ -95,7 +112,7 @@ export default function Navigation() {
               <div
                 key={item.path}
                 className="relative"
-                onMouseEnter={() => (item.dropdown || item.megaMenu) && handleMouseEnter(item.label)}
+                onMouseEnter={() => item.megaMenu && handleMouseEnter(item.label)}
                 onMouseLeave={handleMouseLeave}
               >
                 <Link
@@ -107,35 +124,16 @@ export default function Navigation() {
                   }`}
                 >
                   {item.label}
-                  {(item.dropdown || item.megaMenu) && (
+                  {item.megaMenu && (
                     <ChevronDown
                       size={14}
                       className={`ml-1 transition-transform ${openDropdown === item.label ? 'rotate-180' : ''}`}
                     />
                   )}
-                  {location.pathname === item.path && !item.dropdown && !item.megaMenu && (
+                  {location.pathname === item.path && !item.megaMenu && (
                     <span className="absolute -bottom-1 left-0 w-full h-px bg-[#D91A5F]" />
                   )}
                 </Link>
-
-                {/* Regular dropdown for Home */}
-                {item.dropdown && openDropdown === item.label && (
-                  <div
-                    className="absolute top-full left-0 mt-2 bg-white border border-[#0f172a]/8 shadow-lg min-w-[200px] py-2 z-50"
-                    onMouseEnter={() => handleMouseEnter(item.label)}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    {item.dropdown.map((d) => (
-                      <Link
-                        key={d.path}
-                        to={d.path}
-                        className="block px-4 py-2.5 text-sm text-[#0f172a]/70 hover:text-[#D91A5F] hover:bg-[#fafaf8] transition-colors"
-                      >
-                        {d.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
 
                 {/* Mega menu for Diensten */}
                 {item.megaMenu && openDropdown === item.label && (
@@ -159,13 +157,13 @@ export default function Navigation() {
                           </h4>
                           <div className="border-t border-[#0f172a]/8 pt-2 space-y-1">
                             {col.links.map((link) => (
-                              <Link
+                              <button
                                 key={link.label}
-                                to={link.path}
-                                className="block text-sm text-[#0f172a]/60 hover:text-[#D91A5F] py-1 transition-colors"
+                                onClick={() => handleDropdownClick(link.path)}
+                                className="block w-full text-left text-sm text-[#0f172a]/60 hover:text-[#D91A5F] py-1 transition-colors cursor-pointer"
                               >
                                 {link.label}
-                              </Link>
+                              </button>
                             ))}
                           </div>
                         </div>
@@ -207,20 +205,6 @@ export default function Navigation() {
                 >
                   {item.label}
                 </Link>
-                {item.dropdown && (
-                  <div className="ml-4 mt-2 space-y-2">
-                    {item.dropdown.map((d) => (
-                      <Link
-                        key={d.path}
-                        to={d.path}
-                        onClick={() => setMobileOpen(false)}
-                        className="block text-sm text-[#0f172a]/60 hover:text-[#D91A5F]"
-                      >
-                        {d.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
                 {item.megaMenu && (
                   <div className="ml-4 mt-2 space-y-2">
                     {dienstenMegaMenu.columns.map((col) => (
@@ -229,14 +213,16 @@ export default function Navigation() {
                           {col.title}
                         </span>
                         {col.links.map((link) => (
-                          <Link
+                          <button
                             key={link.label}
-                            to={link.path}
-                            onClick={() => setMobileOpen(false)}
-                            className="block text-sm text-[#0f172a]/60 hover:text-[#D91A5F] pl-2 py-1"
+                            onClick={() => {
+                              handleDropdownClick(link.path)
+                              setMobileOpen(false)
+                            }}
+                            className="block w-full text-left text-sm text-[#0f172a]/60 hover:text-[#D91A5F] pl-2 py-1 cursor-pointer"
                           >
                             {link.label}
-                          </Link>
+                          </button>
                         ))}
                       </div>
                     ))}
