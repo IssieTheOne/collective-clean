@@ -17,13 +17,13 @@ export default function Navigation() {
   return (
     <nav className="bg-white border-b border-[#0f172a]/8 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex items-center justify-between h-28">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group py-2">
             <img
               src="/images/logo-final.png"
               alt="Collective Facility Services"
-              className="h-20 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 

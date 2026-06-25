@@ -26,7 +26,6 @@ export default function Footer() {
               <li><Link to="/diensten#beveiliging" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Beveiliging</Link></li>
               <li><Link to="/diensten#receptie" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Receptie</Link></li>
               <li><Link to="/diensten#schoonmaak" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Schoonmaak</Link></li>
-              <li><Link to="/diensten#schoonmaak" className="text-[#0f172a]/70 hover:text-[#D91A5F] transition-colors">Hotel Housekeeping</Link></li>
             </ul>
           </div>
 

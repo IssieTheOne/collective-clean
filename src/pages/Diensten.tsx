@@ -53,7 +53,7 @@ export default function Diensten() {
       </section>
 
       {/* Beveiliging */}
-      <section id="beveiliging" className="py-20 sm:py-28 bg-[#fafaf8]">
+      <section id="beveiliging" className="scroll-mt-24 py-20 sm:py-28 bg-[#fafaf8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
@@ -91,7 +91,7 @@ export default function Diensten() {
       </section>
 
       {/* Receptie */}
-      <section id="receptie" className="py-20 sm:py-28 bg-white">
+      <section id="receptie" className="scroll-mt-24 py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div className="order-2 lg:order-1 space-y-0">
@@ -129,7 +129,7 @@ export default function Diensten() {
       </section>
 
       {/* Schoonmaak */}
-      <section id="schoonmaak" className="py-20 sm:py-28 bg-[#fafaf8]">
+      <section id="schoonmaak" className="scroll-mt-24 py-20 sm:py-28 bg-[#fafaf8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>

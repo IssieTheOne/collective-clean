@@ -8,27 +8,28 @@ export default function ScrollToTop() {
   useEffect(() => {
     const isNewPage = prevPathname.current !== pathname
 
-    if (isNewPage) {
-      // Cross-page navigation: scroll to top first, then handle hash after render
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-
-      if (hash) {
-        const id = hash.replace('#', '')
+    if (hash) {
+      const id = hash.replace('#', '')
+      if (isNewPage) {
+        // Cross-page with hash: wait for DOM, then scroll directly to section
+        // No intermediate scroll-to-top to avoid stutter
         const timeout = setTimeout(() => {
           const el = document.getElementById(id)
           if (el) {
             el.scrollIntoView({ behavior: 'smooth', block: 'start' })
           }
-        }, 200)
+        }, 150)
         return () => clearTimeout(timeout)
+      } else {
+        // Same-page hash change: scroll directly to section
+        const el = document.getElementById(id)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
       }
-    } else if (hash) {
-      // Same-page hash change: scroll directly to the section
-      const id = hash.replace('#', '')
-      const el = document.getElementById(id)
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }
+    } else if (isNewPage) {
+      // Cross-page without hash: smooth scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
     prevPathname.current = pathname
